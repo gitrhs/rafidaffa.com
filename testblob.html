@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                text-align: center;
+            }
+            .blob-wrapper {
+                max-width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+            .blob {
+                width: 100%;
+                height: 100%;
+                margin-top: 20px;
+                background: url("/image/rafi.jpg") center/cover;
+                transition: border-radius 1.5s ease-in-out;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="blob-wrapper" id="blob-wrapper">
+            <div class="blob"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+        <script>
+            let intervalId;
+
+            function generateBlob() {
+                const percentage1 = _.random(25, 75);
+                const percentage2 = _.random(25, 75);
+                const percentage3 = _.random(25, 75);
+                const percentage4 = _.random(25, 75);
+                const percentage11 = 100 - percentage1;
+                const percentage21 = 100 - percentage2;
+                const percentage31 = 100 - percentage3;
+                const percentage41 = 100 - percentage4;
+                const borderRadius = `${percentage1}% ${percentage11}% ${percentage21}% ${percentage2}% / ${percentage3}% ${percentage4}% ${percentage41}% ${percentage31}%`;
+                $(".blob").css("border-radius", borderRadius);
+            }
+
+            $(document).ready(function () {
+                const element = document.querySelector("#blob-wrapper");
+                generateBlob();
+                element.addEventListener("mouseover", () => {
+                    console.log("Mouse in (over)");
+                    if (!intervalId) {
+                        intervalId = setInterval(generateBlob, 2000);
+                    }
+                });
+
+                element.addEventListener("mouseout", () => {
+                    console.log("Mouse out");
+                    clearInterval(intervalId);
+                    intervalId = null;
+                });
+            });
+        </script>
+    </body>
+</html>

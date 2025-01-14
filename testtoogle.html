@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                    Roboto, sans-serif;
+            }
+
+            .toggle-container {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .role {
+                font-size: 24px;
+                font-weight: bold;
+                color: #000;
+                transition: color 0.3s;
+            }
+
+            .role.inactive {
+                color: #ccc;
+            }
+
+            .toogle-switch {
+                position: relative;
+                width: 150px;
+                height: 64px;
+                background: #f0f0f0;
+                border-radius: 32px;
+                cursor: pointer;
+                padding: 4px;
+            }
+
+            .toogle-switch-handle {
+                position: absolute;
+                width: 56px;
+                height: 56px;
+                background: white;
+                margin-top: 4px;
+                margin-left: 4px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .toogle-switch[data-active="current"] {
+                background: #e6ffe6;
+            }
+
+            .toogle-switch[data-active="main"] {
+                background: #fff3d6;
+            }
+
+            .toogle-switch[data-active="main"] .toogle-switch-handle {
+                transform: translateX(85px);
+            }
+
+            #current-icon {
+                content: ">";
+                font-family: monospace;
+                font-size: 20px;
+                width: 24px;
+                height: 24px;
+            }
+
+            #main-icon {
+                width: 24px;
+                height: 24px;
+                stroke: currentColor;
+                stroke-width: 2;
+                fill: none;
+                width: 24px;
+                height: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="toggle-container">
+                <span class="role" id="current-text">Current</span>
+                <div class="toogle-switch" data-active="current">
+                    <div class="toogle-switch-handle">
+                        <div class="icon" id="current-icon">›_</div>
+                    </div>
+                </div>
+                <span class="role inactive" id="main-text">Main</span>
+            </div>
+            <img
+                src="image/indo.png"
+                alt="Indonesia"
+                width="500px"
+                style="max-width: 100%"
+            />
+        </div>
+
+        <script>
+            const toggle = document.querySelector(".toogle-switch");
+            const currentText = document.getElementById("current-text");
+            const mainText = document.getElementById("main-text");
+            const toogleswitchHandle = document.querySelector(
+                ".toogle-switch-handle"
+            );
+
+            toggle.addEventListener("click", () => {
+                const currentState = toggle.getAttribute("data-active");
+                const newState =
+                    currentState === "current" ? "main" : "current";
+
+                toggle.setAttribute("data-active", newState);
+
+                if (newState === "main") {
+                    currentText.classList.add("inactive");
+                    mainText.classList.remove("inactive");
+                    toogleswitchHandle.innerHTML = `
+                    <svg class="icon" id="main-icon" viewBox="0 0 24 24">
+                        <path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/>
+                    </svg>`;
+                } else {
+                    currentText.classList.remove("inactive");
+                    mainText.classList.add("inactive");
+                    toogleswitchHandle.innerHTML =
+                        '<div class="icon" id="current-icon">›_</div>';
+                }
+            });
+        </script>
+    </body>
+</html>

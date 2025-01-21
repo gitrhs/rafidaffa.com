@@ -109,3 +109,27 @@ toggle.addEventListener("click", () => {
 });
 
 /*toogle switch ends */
+document.addEventListener("DOMContentLoaded", () => {
+    const menuItems = document.querySelectorAll(".menu-item");
+    const contentSections = document.querySelectorAll(
+        ".menu-item-content > div"
+    );
+
+    menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+            // Remove 'active' class from all menu items
+            menuItems.forEach((menu) => menu.classList.remove("active"));
+            // Add 'active' class to clicked menu item
+            item.classList.add("active");
+
+            // Hide all content sections
+            contentSections.forEach((section) =>
+                section.classList.add("hidden")
+            );
+
+            // Show the corresponding content section
+            const contentId = `${item.id}-content`;
+            document.getElementById(contentId).classList.remove("hidden");
+        });
+    });
+});

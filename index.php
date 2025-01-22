@@ -143,7 +143,7 @@
         </div>
         <div class="col main-content" id="main-content">
             <?php
-                file_get_contents('../content/home.php');
+                include(__DIR__.'/content/home.php');
             ?>
         </div>
     </div>

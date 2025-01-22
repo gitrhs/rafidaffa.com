@@ -2,7 +2,7 @@ function coursefunc() {
     /*course menu*/
     const menuItems = document.querySelectorAll(".menu-item");
     const contentSections = document.querySelectorAll(
-        ".menu-item-content > div"
+        ".menu-item-contentv2 > div"
     );
 
     menuItems.forEach((item) => {

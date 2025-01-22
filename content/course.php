@@ -19,10 +19,10 @@
                 <span>Cert and Doc</span>
             </a>
         </div>
-        <div class="menu-item-content">
-            <div id="allcourse-content" class="row text-center">
+        <div class="menu-item-contentv2">
+            <div id="allcourse-content">
                 <br>
-                <div class="horizontal">
+                <div class="horizontalv2">
                     <button type="button" class="btn btn-badge badge-secondary d-flex align-items-center">
                         <span>AI</span>
                     </button>
@@ -44,9 +44,33 @@
                     <button type="button" class="btn btn-badge badge-secondary d-flex align-items-center">
                         <span>Language Course</span>
                     </button>
-                    <button type="button" class="btn btn-badge badge-secondary d-flex align-items-center">
-                        <span>Co-Curriculum</span>
-                    </button>
+                </div>
+                <br>
+                <div>
+                    <div class="row">
+                        <div class="col-6 col-lg-4">
+                            <div class="course-card d-flex align-items-center">
+                                <div>
+                                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                                        <img src="icon/UM.png" alt="UM" class="course-image" />
+                                        <span class="course-source">University of Malaya</span><br>
+                                    </div>
+                                    <span class="course-title">Algorithm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="course-card d-flex align-items-center">
+                                <div>
+                                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                                        <img src="icon/UM.png" alt="UM" class="course-image" />
+                                        <span class="course-source">University of Malaya</span><br>
+                                    </div>
+                                    <span class="course-title">Introduction to Data Science</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -509,6 +509,7 @@ body {
     padding: 10px;
     width: 100%;
     height: 100px;
+    margin-bottom: 20px;
 }
 .course-image {
     width: 20px;
@@ -604,4 +605,12 @@ body {
     .course-card {
         height: 120px;
     }
+}
+.warning-notes {
+    background-color: #fbecdd;
+    border-radius: 7px;
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    margin: 10px;
 }

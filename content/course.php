@@ -4,6 +4,10 @@
             <taken-icon class="menu-icon-data"></taken-icon>&nbsp;Course & Certificate
         </div>
         <span class="text-silent subtitle">Here are some courses and certificates that I have taken</span>
+        <div class="warning-notes d-flex align-items-center">
+            <span><i>Note:</i><br>This page is still under development. Some courses and certificates may not be
+                displayed.</span>
+        </div>
         <br>
         <div class="horizontal">
             <a class="menu-item course-item active" id="allcourse">
@@ -67,6 +71,17 @@
                                         <span class="course-source">University of Malaya</span><br>
                                     </div>
                                     <span class="course-title">Introduction to Data Science</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="course-card d-flex align-items-center">
+                                <div>
+                                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                                        <img src="icon/UM.png" alt="UM" class="course-image" />
+                                        <span class="course-source">University of Malaya</span><br>
+                                    </div>
+                                    <span class="course-title">Database</span>
                                 </div>
                             </div>
                         </div>

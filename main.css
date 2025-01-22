@@ -82,6 +82,10 @@ body {
     width: max(50%, 600px);
     max-width: 90%;
 }
+.bigcontent {
+    width: max(80%, 1000px);
+    max-width: min(90%, 1500px);
+}
 .main-content {
     overflow-y: auto;
     max-height: 100vh;
@@ -135,6 +139,20 @@ body {
 .btn-main.active:active {
     background-color: #050505;
     color: #ffffff;
+}
+.btn-badge {
+    font-size: 14px;
+    margin: 5px;
+    height: 34px;
+    border-radius: 28px;
+}
+.badge-secondary {
+    border: solid 1px #9d9d9d;
+    color: #404040;
+}
+.badge-secondary:hover {
+    background-color: #e0e0e0;
+    color: #000000;
 }
 .btn-max {
     width: 100%;
@@ -542,4 +560,7 @@ body {
 }
 .text14 {
     font-size: 14px;
+}
+.course-item {
+    font-size: 30px !important;
 }

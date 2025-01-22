@@ -524,7 +524,6 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     padding: 10px;
-    gap: 10px;
 }
 
 .hidden {
@@ -535,6 +534,7 @@ body {
     width: 75%;
     height: auto;
     object-fit: contain;
+    margin-bottom: 20px;
 }
 
 .button-border {

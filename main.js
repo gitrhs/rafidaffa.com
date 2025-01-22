@@ -86,6 +86,9 @@ function loadContent(data_id) {
             case "course":
                 coursefunc();
                 break;
+            case "contact":
+                contactfunc();
+                break;
             default:
                 console.log("no function");
         }
@@ -110,6 +113,11 @@ function loadContent(data_id) {
                     case "course":
                         loadScript("../js/course.js", () => {
                             coursefunc();
+                        });
+                        break;
+                    case "contact":
+                        loadScript("../js/contact.js", () => {
+                            contactfunc();
                         });
                         break;
                     default:

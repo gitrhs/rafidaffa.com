@@ -80,7 +80,7 @@ body {
 }
 .content {
     width: max(50%, 600px);
-    max-width: 100%;
+    max-width: 90%;
 }
 .main-content {
     overflow-y: auto;

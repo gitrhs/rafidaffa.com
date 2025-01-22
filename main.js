@@ -83,8 +83,8 @@ function loadContent(data_id) {
             case "home":
                 homefunc();
                 break;
-            case "resume":
-                resumefunc();
+            case "course":
+                coursefunc();
                 break;
             default:
                 console.log("no function");
@@ -107,9 +107,9 @@ function loadContent(data_id) {
                             homefunc(); // Called after home.js is loaded
                         });
                         break;
-                    case "resume":
-                        loadScript("../js/resume.js", () => {
-                            resumefunc();
+                    case "course":
+                        loadScript("../js/course.js", () => {
+                            coursefunc();
                         });
                         break;
                     default:

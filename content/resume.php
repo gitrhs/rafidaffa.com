@@ -3,16 +3,18 @@
         <div class="d-flex justify-content-between align-items-center" style="margin-bottom: -10px;">
             <small>Last updated: 22/01/2024</small>
             <div class="d-flex justify-content-end align-items-center">
-                <button type="button" class="btn btn-main d-flex align-items-center">
+                <a href="resources/rafi_daffa_resume.pdf" download="Rafi_Daffa_Ramadhani_Resume.pdf" type="button"
+                    class="btn btn-main d-flex align-items-center">
                     <span class="menu-iconv2">
                         <download-icon class="menu-icon-data icon20"></download-icon>
                     </span>
-                </button>
-                <button type="button" class="btn btn-main d-flex align-items-center">
+                </a>
+                <a href="https://docs.google.com/gview?url=https://rafidaffa.com/resources/rafi_daffa_resume.pdf&embedded=true"
+                    target="_blank" type="button" class="btn btn-main d-flex align-items-center">
                     <span class="menu-iconv2">
                         <arrow-icon class="menu-icon-data icon20"></arrow-icon>
                     </span>
-                </button>
+                </a>
             </div>
         </div>
         <hr>

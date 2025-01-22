@@ -141,10 +141,20 @@
                     -->
             </div>
         </div>
-        <div class="col main-content" id="main-content">
-            <?php
-                include(__DIR__.'/content/home.php');
-            ?>
+        <div class="col">
+            <div class="sticky-top d-flex align-items-center">
+                <div class="burger-icon">
+                    <button type="button" class="btn btn-main d-flex justify-content-between align-items-center"
+                        onclick="burgerToogle()">
+                        <menu-icon class="burger-icon-data"></menu-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="main-content" id="main-content">
+                <?php
+                    include(__DIR__.'/content/home.php');
+                ?>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

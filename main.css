@@ -180,6 +180,15 @@ body {
 .btn-main.active > .menu-icon > .menu-icon-data {
     --iconcolor: #ffffff;
 }
+.btn-main:hover > .menu-iconv2 > .menu-icon-data {
+    --iconcolor: #000000;
+}
+.btn-main:hover > .togo > .menu-iconv2 > .menu-icon-data {
+    --iconcolor: #000000;
+}
+.icon20 {
+    --iconsize: 20px !important;
+}
 .togo-icon {
     margin-top: 5px;
     --iconcolor: #a6a6a6;

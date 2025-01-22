@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let contentID;
     if (path === "") {
         contentID = "home";
-    } else if (path === "index.html") {
+    } else if (path === "index.php") {
         contentID = "home";
     }
     map.set(contentID, content);
@@ -79,12 +79,43 @@ document.addEventListener("DOMContentLoaded", () => {
 function loadContent(data_id) {
     if (map.has(data_id)) {
         document.getElementById("main-content").innerHTML = map.get(data_id);
-        window[`${data_id}func`]();
+        switch (data_id) {
+            case "home":
+                homefunc();
+                break;
+            case "resume":
+                resumefunc();
+                break;
+            default:
+                console.log("no function");
+        }
     } else {
+        //loading screen
         document.getElementById("main-content").innerHTML = `
         <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
             <img src="loadgif.gif" alt="loading" style="width: 100px; height: auto;">
         </div>
         `;
+        //try to load the content from the API
+        fetch(`../content/${data_id}.php`)
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("main-content").innerHTML = data;
+                switch (data_id) {
+                    case "home":
+                        loadScript("../js/home.js", () => {
+                            homefunc(); // Called after home.js is loaded
+                        });
+                        break;
+                    case "resume":
+                        loadScript("../js/resume.js", () => {
+                            resumefunc();
+                        });
+                        break;
+                    default:
+                        console.log("no function");
+                }
+                map.set(data_id, data);
+            });
     }
 }

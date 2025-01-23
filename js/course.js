@@ -43,7 +43,7 @@ function coursefunc() {
         }" class="course-image" />
                                     <span class="course-source">${
                                         course.issuer
-                                    }</span><br>
+                                    } (${course.subtitle})</span><br>
                                 </div>
                                 <span class="course-title">${
                                     course.title
@@ -53,14 +53,42 @@ function coursefunc() {
                     </div>
                 `;
     }
-
+    function renderUniversity(course) {
+        if ((course.type = "1")) {
+            return `
+                    <div class="col-6 col-lg-4">
+                        <div class="course-card d-flex align-items-center">
+                            <div>
+                                <div class="d-flex flex-wrap gap-2 align-items-center">
+                                    <img src="${getIssuerImage(
+                                        course.issuer
+                                    )}" alt="${
+                course.issuer
+            }" class="course-image" />
+                                    <span class="course-source">${
+                                        course.issuer
+                                    } (${course.subtitle})</span><br>
+                                </div>
+                                <span class="course-title">${
+                                    course.title
+                                }</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        }
+    }
     // Fetch and display the courses
     fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
+            const sortedCourses = data.sort((a, b) => a.priority - b.priority);
             const courseContainer = document.getElementById("course-container");
-            const courseCards = data.map(renderCourseCard).join(""); // Generate all cards
+            const courseCards = sortedCourses.map(renderCourseCard).join(""); // Generate all cards
             courseContainer.innerHTML = courseCards; // Render cards in the container
+            const uniContainer = document.getElementById("uni-container");
+            const uniList = sortedCourses.map(renderUniversity).join(""); // Generate all cards
+            uniContainer.innerHTML = uniList;
         })
         .catch((error) => {
             console.error("Error fetching course data:", error);

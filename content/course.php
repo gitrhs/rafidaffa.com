@@ -54,6 +54,12 @@
                     <div id="course-container" class="row"></div>
                 </div>
             </div>
+            <div id="uni-content">
+                <br>
+                <div>
+                    <div id="uni-container" class="row"></div>
+                </div>
+            </div>
         </div>
         <br><br>
     </div>

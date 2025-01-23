@@ -20,7 +20,7 @@
                 <span>Other Course</span>
             </a>
             <a class="menu-item course-item" id="doc">
-                <span>Cert and Doc</span>
+                <span>Award and Cert</span>
             </a>
         </div>
         <div class="menu-item-contentv2">
@@ -58,6 +58,18 @@
                 <br>
                 <div>
                     <div id="uni-container" class="row"></div>
+                </div>
+            </div>
+            <div id="othercourse-content">
+                <br>
+                <div>
+                    <div id="othercourse-container" class="row"></div>
+                </div>
+            </div>
+            <div id="doc-content">
+                <br>
+                <div>
+                    <div id="doc-container" class="row"></div>
                 </div>
             </div>
         </div>

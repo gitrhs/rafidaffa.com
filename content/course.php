@@ -51,41 +51,7 @@
                 </div>
                 <br>
                 <div>
-                    <div class="row">
-                        <div class="col-6 col-lg-4">
-                            <div class="course-card d-flex align-items-center">
-                                <div>
-                                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                                        <img src="icon/UM.png" alt="UM" class="course-image" />
-                                        <span class="course-source">University of Malaya</span><br>
-                                    </div>
-                                    <span class="course-title">Algorithm</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-4">
-                            <div class="course-card d-flex align-items-center">
-                                <div>
-                                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                                        <img src="icon/UM.png" alt="UM" class="course-image" />
-                                        <span class="course-source">University of Malaya</span><br>
-                                    </div>
-                                    <span class="course-title">Introduction to Data Science</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-4">
-                            <div class="course-card d-flex align-items-center">
-                                <div>
-                                    <div class="d-flex flex-wrap gap-2 align-items-center">
-                                        <img src="icon/UM.png" alt="UM" class="course-image" />
-                                        <span class="course-source">University of Malaya</span><br>
-                                    </div>
-                                    <span class="course-title">Database</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="course-container" class="row"></div>
                 </div>
             </div>
         </div>

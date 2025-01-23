@@ -36,6 +36,7 @@
                     </span>
                     <span>Home</span>
                 </button>
+                <!--
                 <button id="menu" data-id="blog" type="button" class="btn btn-main btn-max d-flex align-items-center"
                     onclick="setActive(this)">
                     <span class="menu-icon">
@@ -43,6 +44,7 @@
                     </span>
                     <span>Blog</span>
                 </button>
+-->
             </div>
             <div class="navbar-section">
                 <p class="text-silent navtitle">Me</p>
@@ -53,6 +55,7 @@
                     </span>
                     <span>Resume</span>
                 </button>
+                <!-- ama
                 <button id="menu" data-id="ama" type="button" class="btn btn-main btn-max d-flex align-items-center"
                     onclick="setActive(this)">
                     <span class="menu-icon">
@@ -60,6 +63,7 @@
                     </span>
                     <span>AMA</span>
                 </button>
+                ama -->
                 <button id="menu" data-id="course" type="button" class="btn btn-main btn-max d-flex align-items-center"
                     onclick="setActive(this)">
                     <span class="menu-icon">

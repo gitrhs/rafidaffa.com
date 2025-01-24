@@ -93,7 +93,7 @@ body {
 }
 .main-content {
     overflow-y: auto;
-    max-height: 100vh;
+    max-height: 100dvh;
 }
 #limit-word {
     white-space: nowrap;
@@ -601,9 +601,14 @@ body {
 .course-item {
     font-size: 30px !important;
 }
+@media (max-width: 500px) {
+    .course-card {
+        height: 140px;
+    }
+}
 @media (max-width: 450px) {
     .course-card {
-        height: 120px;
+        height: 160px;
     }
 }
 .warning-notes {

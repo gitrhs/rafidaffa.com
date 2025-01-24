@@ -1,3 +1,11 @@
+<div class="sticky-top d-flex align-items-center">
+    <div class="burger-icon">
+        <button type="button" class="btn btn-main d-flex justify-content-between align-items-center"
+            onclick="burgerToogle()">
+            <menu-icon class="burger-icon-data"></menu-icon>
+        </button>
+    </div>
+</div>
 <div class="d-flex justify-content-center">
     <div class="bigcontent">
         <div class="d-flex align-items-center">
@@ -51,25 +59,25 @@
                 </div>
                 <br>
                 <div>
-                    <div id="course-container" class="row">l,ll</div>
+                    <div id="course-container" class="row"></div>
                 </div>
             </div>
             <div id="uni-content">
                 <br>
                 <div>
-                    <div id="uni-container" class="row">,l,l</div>
+                    <div id="uni-container" class="row"></div>
                 </div>
             </div>
             <div id="othercourse-content">
                 <br>
                 <div>
-                    <div id="othercourse-container" class="row">huhuj</div>
+                    <div id="othercourse-container" class="row"></div>
                 </div>
             </div>
             <div id="doc-content">
                 <br>
                 <div>
-                    <div id="doc-container" class="row">imi</div>
+                    <div id="doc-container" class="row"></div>
                 </div>
             </div>
         </div>

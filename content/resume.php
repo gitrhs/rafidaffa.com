@@ -1,3 +1,11 @@
+<div class="sticky-top d-flex align-items-center">
+    <div class="burger-icon">
+        <button type="button" class="btn btn-main d-flex justify-content-between align-items-center"
+            onclick="burgerToogle()">
+            <menu-icon class="burger-icon-data"></menu-icon>
+        </button>
+    </div>
+</div>
 <div class="d-flex justify-content-center">
     <div class="content">
         <div class="d-flex justify-content-between align-items-center" style="margin-bottom: -10px;">

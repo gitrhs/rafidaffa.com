@@ -51,25 +51,25 @@
                 </div>
                 <br>
                 <div>
-                    <div id="course-container" class="row"></div>
+                    <div id="course-container" class="row">l,ll</div>
                 </div>
             </div>
             <div id="uni-content">
                 <br>
                 <div>
-                    <div id="uni-container" class="row"></div>
+                    <div id="uni-container" class="row">,l,l</div>
                 </div>
             </div>
             <div id="othercourse-content">
                 <br>
                 <div>
-                    <div id="othercourse-container" class="row"></div>
+                    <div id="othercourse-container" class="row">huhuj</div>
                 </div>
             </div>
             <div id="doc-content">
                 <br>
                 <div>
-                    <div id="doc-container" class="row"></div>
+                    <div id="doc-container" class="row">imi</div>
                 </div>
             </div>
         </div>

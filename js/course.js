@@ -5,15 +5,27 @@ function coursefunc() {
         ".menu-item-contentv2 > div"
     );
 
+    // Hide all content sections except "All" by default
+    contentSections.forEach((section) => {
+        if (section.id !== "allcourse-content") {
+            section.classList.add("hidden");
+        }
+    });
+
     menuItems.forEach((item) => {
         item.addEventListener("click", () => {
+            // Remove active class from all menu items
             menuItems.forEach((menu) => menu.classList.remove("active"));
+
+            // Add active class to clicked item
             item.classList.add("active");
-            console.log("active...");
-            contentSections.forEach(
-                (section) => section.classList.add("hidden"),
-                console.log("hidden...")
+
+            // Hide all content sections
+            contentSections.forEach((section) =>
+                section.classList.add("hidden")
             );
+
+            // Show the corresponding content section
             const contentId = `${item.id}-content`;
             document.getElementById(contentId).classList.remove("hidden");
         });
@@ -34,18 +46,18 @@ function coursefunc() {
     // Function to render a single course card
     function renderCourseCard(course) {
         return `
-                    <div class="col-6 col-lg-4">
-                        <div class="course-card d-flex align-items-center">
-                            <div>
-                                <div class="d-flex flex-wrap gap-2 align-items-center">
-                                    <img src="icon/${course.issuer}.png" alt="${course.issuer}" class="course-image" />
-                                    <span class="course-source">${course.issuer} (${course.subtitle})</span><br>
-                                </div>
-                                <span class="course-title">${course.title}</span>
-                            </div>
+            <div class="col-6 col-lg-4">
+                <div class="course-card d-flex align-items-center">
+                    <div>
+                        <div class="d-flex flex-wrap gap-2 align-items-center">
+                            <img src="icon/${course.issuer}.png" alt="${course.issuer}" class="course-image" />
+                            <span class="course-source">${course.issuer} (${course.subtitle})</span><br>
                         </div>
+                        <span class="course-title">${course.title}</span>
                     </div>
-                `;
+                </div>
+            </div>
+        `;
     }
     function renderUniversity(course) {
         if (course.type == "1") {

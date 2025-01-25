@@ -84,8 +84,10 @@
                 <button type="button" class="btn btn-main btn-max">
                     UM Notes
                 </button>
-                <button type="button" class="btn btn-main btn-max">
-                    Poernamafest
+                <button id="menu" data-id="poernamafest" type="button"
+                    class="btn btn-main btn-max d-flex align-items-center" onclick="setActive(this)">
+                    <img class="menu-icov2" src="icon/poernamaicon.png" />
+                    <span>Poernamafest</span>
                 </button>
                 <button type="button" class="btn btn-main btn-max">
                     Poernamafest Store

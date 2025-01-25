@@ -81,8 +81,10 @@
             </div>
             <div class="navbar-section">
                 <p class="text-silent navtitle">Projects</p>
-                <button type="button" class="btn btn-main btn-max">
-                    UM Notes
+                <button id="menu" data-id="umnotes" type="button" class="btn btn-main btn-max d-flex align-items-center"
+                    onclick="setActive(this)">
+                    <img class="menu-icov2" src="icon/umnoteslow.png" />
+                    <span>UM Notes</span>
                 </button>
                 <button id="menu" data-id="poernamafest" type="button"
                     class="btn btn-main btn-max d-flex align-items-center" onclick="setActive(this)">
@@ -92,9 +94,11 @@
                 <button type="button" class="btn btn-main btn-max">
                     Poernamafest Store
                 </button>
+                <!--
                 <button type="button" class="btn btn-main btn-max">
                     AirMY
                 </button>
+-->
             </div>
             <div class="navbar-section">
                 <p class="text-silent navtitle">Social</p>

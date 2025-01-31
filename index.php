@@ -89,10 +89,12 @@
                 <button id="menu" data-id="poernamafest" type="button"
                     class="btn btn-main btn-max d-flex align-items-center" onclick="setActive(this)">
                     <img class="menu-icov2" src="icon/poernamaicon.png" />
-                    <span>Poernamafest</span>
+                    <span>poernamafest</span>
                 </button>
-                <button type="button" class="btn btn-main btn-max">
-                    Poernamafest Store
+                <button id="menu" data-id="poernamafeststore" type="button"
+                    class="btn btn-main btn-max d-flex align-items-center" onclick="setActive(this)">
+                    <img class="menu-icov2" src="icon/poernamaicon.png" />
+                    <span>poernamafest Store</span>
                 </button>
                 <!--
                 <button type="button" class="btn btn-main btn-max">

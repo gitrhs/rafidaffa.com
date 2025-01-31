@@ -94,6 +94,7 @@ body {
 .main-content {
     overflow-y: auto;
     max-height: 100dvh;
+    scroll-behavior: smooth !important;
 }
 #limit-word {
     white-space: nowrap;
@@ -687,8 +688,11 @@ textarea {
 }
 .label {
     font-weight: bold;
-    text-align: right;
 }
 .value {
     text-align: left;
+    margin-bottom: 10px;
+}
+.hr2 {
+    border-top: 3px solid black;
 }

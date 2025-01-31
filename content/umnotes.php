@@ -11,15 +11,10 @@
         <div style="text-align: center;">
             <img src="icon/umnotes.png" class="projectlogo">
         </div><br>
-        <a class="d-flex align-items-center gap-1 textlink title-section" href="https://notes.ppiunimalaya.id"
-            target="_blank">
+        <div class="gap-1 title-section">
             <h1>UM Notes</h1>
-            <arrow-icon class="togo-icon" style="margin-top: -20px; margin-right: 5px;"></arrow-icon>
-        </a>
-        <p class="about-section" style="margin-bottom: -5px;"><i><b>"UM Notes"</b>, a place for University of Malaya
-                students to share their notes
-                and
-                lecture slides.</i></p>
+            <hr class="hr2">
+        </div>
         <p class="about-section">UM Notes is a digital platform or resource hub used by students and faculty
             of the University of Malaya (UM) to access, share, and organize academic materials. It includes:<br>-
             Lecture Notes<br>- Past Papers<br>- Study Guides<br>- Collaborative Resources</p>

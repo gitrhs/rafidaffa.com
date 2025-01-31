@@ -11,11 +11,10 @@
         <div style="text-align: center;">
             <img src="icon/poernamalogo.jpg" class="projectlogo">
         </div><br>
-        <a class="d-flex align-items-center gap-1 textlink title-section" href="https://poernamafest.rafidaffa.com"
-            target="_blank">
+        <div class="gap-1 title-section">
             <h1>poernamafest</h1>
-            <arrow-icon class="togo-icon" style="margin-top: -20px; margin-right: 5px;"></arrow-icon>
-        </a>
+            <hr class="hr2">
+        </div>
         <p class="about-section">PoernamaFest is an annual cultural festival that celebrates the beauty and diversity of
             cultures from around the world, with a special focus on Indonesian music and heritage. It brings people
             together through music, art, food, and activities like workshops and cultural displays, creating a space for

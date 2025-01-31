@@ -11,11 +11,10 @@
         <div style="text-align: center;">
             <img src="icon/poernamalogo.jpg" class="projectlogo">
         </div><br>
-        <a class="d-flex align-items-center gap-1 textlink title-section" href="https://poernamafest.rafidaffa.com"
-            target="_blank">
+        <div class="gap-1 title-section">
             <h1>poernamafest Store</h1>
-            <arrow-icon class="togo-icon" style="margin-top: -20px; margin-right: 5px;"></arrow-icon>
-        </a>
+            <hr class="hr2">
+        </div>
         <p class="about-section">PoernamaFest Store is the official merchandise spot for the PoernamaFest cultural
             festival. It offers a variety of festival-themed items like t-shirts, stickers, accessories, and more, all
             inspired by the celebration of Indonesian heritage and global diversity.

@@ -32,7 +32,7 @@
             class="btn btn-main d-flex align-items-center button-border">
             <img class="menu-icov2" src="icon/umnoteslow.png" />
             <span>View Website</span>
-        </a><br>
+        </a>
 
         <br>
     </div>

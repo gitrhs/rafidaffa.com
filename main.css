@@ -678,6 +678,13 @@ textarea {
     width: 300px;
     max-width: 100%;
 }
+.projectimg {
+    width: 100%;
+    loading: lazy;
+    border: solid 1px black;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
 .info {
     display: grid;
     grid-template-columns: max-content auto;

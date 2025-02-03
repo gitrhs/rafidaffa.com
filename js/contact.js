@@ -31,4 +31,25 @@ function contactfunc() {
         messageInput.style.height = "auto"; // Reset height
         messageInput.style.height = messageInput.scrollHeight + "px"; // Adjust height to fit content
     });
+    $(document).ready(function () {
+        $("form").submit(function (event) {
+            var formData = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                message: $("#message").val(),
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "message.php",
+                data: formData,
+                dataType: "json",
+                encode: true,
+            }).done(function (data) {
+                console.log(data);
+            });
+
+            event.preventDefault();
+        });
+    });
 }

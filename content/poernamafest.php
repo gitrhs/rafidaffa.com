@@ -47,5 +47,11 @@
         <img src="image/poernamafest/8.jpg" class="projectimg" loading="lazy">
         <img src="image/poernamafest/9.jpg" class="projectimg" loading="lazy">
         <br><br>
+        <div class="text-center text-silent text14">
+            &#169;<script>
+            document.write(new Date().getFullYear())
+            </script> Rafi Daffa Ramadhani. All rights reserved.
+        </div>
+        <br>
     </div>
 </div>

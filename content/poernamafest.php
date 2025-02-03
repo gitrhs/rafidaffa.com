@@ -36,7 +36,7 @@
             <img class="menu-icov2" src="icon/poernamaicon.png" />
             <span>View Project Archive</span>
         </a><br><br>
-        <h3 class="text-center">Images</h3>
+        <h3 class="text-center">Website Guidelines</h3>
         <img src="image/poernamafest/1.jpg" class="projectimg" loading="lazy">
         <img src="image/poernamafest/2.jpg" class="projectimg" loading="lazy">
         <img src="image/poernamafest/3.jpg" class="projectimg" loading="lazy">

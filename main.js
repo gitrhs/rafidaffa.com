@@ -46,6 +46,8 @@ function setActive(button) {
     button.classList.add("active");
     const data_id = button.getAttribute("data-id");
     loadContent(data_id);
+    //change the url address
+    window.history.pushState(null, null, `${data_id}`);
 }
 //save main content
 var map = new Map();
@@ -60,9 +62,22 @@ function loadScript(src, callback) {
 //current page
 document.addEventListener("DOMContentLoaded", () => {
     //edit based on the page
-    loadScript("../js/home.js", () => {
-        homefunc(); //change depends on the file
-    });
+    let paths = window.location.pathname;
+
+    if (paths === "/" || paths === "/index.php") {
+        loadScript("../js/home.js", () => {
+            homefunc();
+        });
+    } else {
+        // Extract the filename without extension
+        let pageName = paths.split("/").pop().replace(".php", "");
+
+        loadScript(`../js/${pageName}.js`, () => {
+            if (typeof window[`${pageName}func`] === "function") {
+                window[`${pageName}func`]();
+            }
+        });
+    }
     //edit based on the page
 
     const content = document.getElementById("main-content").innerHTML;

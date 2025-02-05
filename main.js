@@ -2,7 +2,23 @@ function burgerToogle() {
     const navbar = document.querySelector(".side-navbar");
     navbar.classList.toggle("show");
 }
+document.addEventListener("click", function (event) {
+    // First, check if we should even handle this click
+    if (event.target.closest(".burger-icon")) {
+        // If it's a click on/inside burger icon, do nothing
+        return;
+    }
 
+    const navbar = document.querySelector(".side-navbar");
+
+    // Only proceed if the menu is shown and we're on mobile view
+    if (navbar.classList.contains("show") && window.innerWidth <= 1024) {
+        // If click is outside the navbar, close it
+        if (!navbar.contains(event.target)) {
+            navbar.classList.remove("show");
+        }
+    }
+});
 function adjustNameToFit(containerId) {
     const container = document.getElementById(containerId);
     const fullName = container.getAttribute("data");

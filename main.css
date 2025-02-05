@@ -55,6 +55,19 @@ body {
     transform: translateX(0);
     opacity: 1;
 }
+.blog-content {
+    overflow-y: auto !important;
+    height: 100vh;
+}
+.blog-content.idle {
+    background-image: radial-gradient(
+        circle at 1px 1px,
+        #a7a7a7 1px,
+        transparent 0
+    );
+    background-size: 25px 25px;
+    background-position: 12.5px 12.5px;
+}
 .col-nav {
     width: 15.3%;
     min-width: max(230px, 15.3%);
@@ -71,6 +84,10 @@ body {
     }
     .blog-navbar {
         width: 100%;
+        border: 0;
+    }
+    .blog-content.idle {
+        display: none;
     }
     .col-nav {
         min-width: min(300px, 15.3%);

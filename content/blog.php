@@ -12,7 +12,7 @@
             mail
         </div>
     </div>
-    <div class="col" style="overflow-y: auto !important; height: 100vh; background-image: radial-gradient(circle at 1px 1px, #a7a7a7 1px, transparent 0);
-  background-size: 25px 25px;">
+    <div class="col blog-content idle">
+        lorem ipsum
     </div>
 </div>

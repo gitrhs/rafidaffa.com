@@ -39,6 +39,7 @@
                     </span>
                     <span>Home</span>
                 </button>
+
                 <button id="menu" data-id="blog" type="button" class="btn btn-main btn-max d-flex align-items-center"
                     onclick="setActive(this)">
                     <span class="menu-icon">
@@ -46,7 +47,6 @@
                     </span>
                     <span>Blog</span>
                 </button>
-
             </div>
             <div class="navbar-section">
                 <p class="text-silent navtitle">Me</p>
@@ -158,7 +158,7 @@
         <div class="col">
             <div class="main-content" id="main-content">
                 <?php
-                    include(__DIR__.'/content/umnotes.php');
+                    include(__DIR__.'/content/blog.php');
                 ?>
             </div>
         </div>

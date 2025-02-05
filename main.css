@@ -50,7 +50,7 @@ body {
     position: relative;
     border-right: 1px solid #eeeff2;
     font-size: 14px;
-    width: 250px;
+    width: 320px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     transform: translateX(0);
     opacity: 1;
@@ -62,11 +62,11 @@ body {
 .blog-content.idle {
     background-image: radial-gradient(
         circle at 1px 1px,
-        #a7a7a7 1px,
+        #eeeff2 1px,
         transparent 0
     );
-    background-size: 25px 25px;
-    background-position: 12.5px 12.5px;
+    background-size: 15px 15px;
+    background-position: 7px 7px;
 }
 .col-nav {
     width: 15.3%;

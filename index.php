@@ -181,7 +181,7 @@
     }
     </style>
     <!--trash ended-->
-    <script src="main.js"></script>
+    <script src="main.js?dev=1.0"></script>
 </body>
 
 </html>

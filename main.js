@@ -39,6 +39,29 @@ const containerId = "limit-word";
 adjustNameToFit(containerId);
 window.addEventListener("resize", () => adjustNameToFit(containerId));
 window.addEventListener("resize", onresize);
+
+function setActive(button) {
+    const buttons = document.querySelectorAll("#menu");
+    const data_id = button.getAttribute("data-id");
+
+    // Check if we're already on this page
+    const currentState = window.history.state;
+    if (currentState && currentState.pageId === data_id) {
+        return; // Don't do anything if we're already on this page
+    }
+
+    // Update active button state
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    // Load content and update history
+    loadContent(data_id);
+    // Use root path for home, otherwise use data_id
+    const newPath = data_id === "home" ? "/" : `/${data_id}`;
+    window.history.pushState({ pageId: data_id }, null, newPath);
+}
+
+// Handle browser back/forward navigation
 window.addEventListener("popstate", function (event) {
     if (event.state && event.state.pageId) {
         // Load the content without pushing a new state
@@ -58,17 +81,10 @@ window.addEventListener("popstate", function (event) {
         loadContent(path);
     }
 });
-function setActive(button) {
-    const buttons = document.querySelectorAll("#menu");
-    buttons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-    const data_id = button.getAttribute("data-id");
-    loadContent(data_id);
-    //change the url address
-    window.history.pushState({ pageId: data_id }, null, `${data_id}`);
-}
+
 //save main content
 var map = new Map();
+
 //call js
 function loadScript(src, callback) {
     const script = document.createElement("script");
@@ -79,36 +95,33 @@ function loadScript(src, callback) {
 
 //current page
 document.addEventListener("DOMContentLoaded", () => {
-    //edit based on the page
     let paths = window.location.pathname;
+    let initialPageId;
 
     if (paths === "/" || paths === "/index.php") {
+        initialPageId = "home";
         loadScript("../js/home.js", () => {
             homefunc();
         });
     } else {
         // Extract the filename without extension
-        let pageName = paths.split("/").pop().replace(".php", "");
-
-        loadScript(`../js/${pageName}.js`, () => {
-            if (typeof window[`${pageName}func`] === "function") {
-                window[`${pageName}func`]();
+        initialPageId = paths.split("/").pop().replace(".php", "");
+        loadScript(`../js/${initialPageId}.js`, () => {
+            if (typeof window[`${initialPageId}func`] === "function") {
+                window[`${initialPageId}func`]();
             }
         });
     }
-    //edit based on the page
 
+    // Save initial content
     const content = document.getElementById("main-content").innerHTML;
-    const path = window.location.pathname.substring(1);
-    let contentID;
-    if (path === "") {
-        contentID = "home";
-    } else if (path === "index.php") {
-        contentID = "home";
-    }
-    map.set(contentID, content);
+    map.set(initialPageId, content);
+
+    // Set initial history state - use root path for home
+    const initialPath = initialPageId === "home" ? "/" : `/${initialPageId}`;
+    window.history.replaceState({ pageId: initialPageId }, null, initialPath);
 });
-//trigger when click menu
+
 function loadContent(data_id) {
     if (map.has(data_id)) {
         document.getElementById("main-content").innerHTML = map.get(data_id);
@@ -140,7 +153,7 @@ function loadContent(data_id) {
                 switch (data_id) {
                     case "home":
                         loadScript("../js/home.js", () => {
-                            homefunc(); // Called after home.js is loaded
+                            homefunc();
                         });
                         break;
                     case "course":

@@ -238,115 +238,115 @@
             <div class="menu-item-content">
                 <div id="frontend-content" class="row text-center">
                     <div class="col-lg-2 col-3">
-                        <img src="skills/html.jpg" class="imgskills">
+                        <img src="skills/html.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/css.jpg" class="imgskills">
+                        <img src="skills/css.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/js.jpg" class="imgskills">
+                        <img src="skills/js.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/react.jpg" class="imgskills">
+                        <img src="skills/react.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/reactnative.jpg" class="imgskills">
+                        <img src="skills/reactnative.jpg" loading="lazy" class="imgskills">
                     </div>
                 </div>
                 <div id="backend-content" class="row text-center hidden">
                     <div class="col-lg-2 col-3">
-                        <img src="skills/python.jpg" class="imgskills">
+                        <img src="skills/python.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/java.jpg" class="imgskills">
+                        <img src="skills/java.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/php.jpg" class="imgskills">
+                        <img src="skills/php.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/django.jpg" class="imgskills">
+                        <img src="skills/django.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/flask.jpg" class="imgskills">
+                        <img src="skills/flask.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/springboot.jpg" class="imgskills">
+                        <img src="skills/springboot.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/mysql.jpg" class="imgskills">
+                        <img src="skills/mysql.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/sqlite.jpg" class="imgskills">
+                        <img src="skills/sqlite.jpg" loading="lazy" class="imgskills">
                     </div>
                 </div>
                 <div id="package-content" class="row text-center hidden">
                     <div class="col-lg-2 col-3">
-                        <img src="skills/bootstrap.jpg" class="imgskills">
+                        <img src="skills/bootstrap.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/tailwind.jpg" class="imgskills">
+                        <img src="skills/tailwind.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/mui.jpg" class="imgskills">
+                        <img src="skills/mui.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/uikitten.jpg" class="imgskills">
+                        <img src="skills/uikitten.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/jquery.jpg" class="imgskills">
+                        <img src="skills/jquery.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/keras.jpg" class="imgskills">
+                        <img src="skills/keras.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/tensorflow.jpg" class="imgskills">
+                        <img src="skills/tensorflow.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/pytorch.jpg" class="imgskills">
+                        <img src="skills/pytorch.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/numpy.jpg" class="imgskills">
+                        <img src="skills/numpy.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/pandas.jpg" class="imgskills">
+                        <img src="skills/pandas.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/gsap.jpg" class="imgskills">
+                        <img src="skills/gsap.jpg" loading="lazy" class="imgskills">
                     </div>
                 </div>
                 <div id="software-content" class="row text-center hidden">
                     <div class="col-lg-2 col-3">
-                        <img src="skills/vscode.jpg" class="imgskills">
+                        <img src="skills/vscode.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/github.jpg" class="imgskills">
+                        <img src="skills/github.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/figma.jpg" class="imgskills">
+                        <img src="skills/figma.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/postman.jpg" class="imgskills">
+                        <img src="skills/postman.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/jupyter.jpg" class="imgskills">
+                        <img src="skills/jupyter.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/googlecolab.jpg" class="imgskills">
+                        <img src="skills/googlecolab.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/canva.jpg" class="imgskills">
+                        <img src="skills/canva.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/powerpoint.jpg" class="imgskills">
+                        <img src="skills/powerpoint.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/excel.jpg" class="imgskills">
+                        <img src="skills/excel.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/word.jpg" class="imgskills">
+                        <img src="skills/word.jpg" loading="lazy" class="imgskills">
                     </div>
                     <div class="col-lg-2 col-3">
-                        <img src="skills/utm.jpg" class="imgskills">
+                        <img src="skills/utm.jpg" loading="lazy" class="imgskills">
                     </div>
                 </div>
             </div>

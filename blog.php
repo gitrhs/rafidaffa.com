@@ -41,8 +41,8 @@
                     <span>Home</span>
                 </button>
 
-                <button id="menu" data-id="blog" type="button" class="btn btn-main btn-max d-flex align-items-center"
-                    onclick="setActive(this)">
+                <button id="menu" data-id="blog" type="button"
+                    class="btn btn-main btn-max active d-flex align-items-center" onclick="setActive(this)">
                     <span class="menu-icon">
                         <blog-icon class="menu-icon-data"></blog-icon>
                     </span>
@@ -84,8 +84,8 @@
             </div>
             <div class="navbar-section">
                 <p class="text-silent navtitle">Projects</p>
-                <button id="menu" data-id="umnotes" type="button"
-                    class="btn btn-main btn-max active d-flex align-items-center" onclick="setActive(this)">
+                <button id="menu" data-id="umnotes" type="button" class="btn btn-main btn-max d-flex align-items-center"
+                    onclick="setActive(this)">
                     <img class="menu-icov2" src="icon/umnoteslow.png" />
                     <span>UM Notes</span>
                 </button>

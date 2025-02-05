@@ -179,7 +179,7 @@
     }
     </style>
     <!--trash ended-->
-    <script src="main.js?dev=1.0"></script>
+    <script src="main.js?dev=1.1"></script>
 </body>
 
 </html>

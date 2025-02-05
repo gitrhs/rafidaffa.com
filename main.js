@@ -46,11 +46,34 @@ function setActive(button) {
     button.classList.add("active");
     const data_id = button.getAttribute("data-id");
     loadContent(data_id);
-    //change the url address
-    window.history.pushState(null, null, `${data_id}`);
+    // Update the URL and add a new history entry
+    window.history.pushState({ pageId: data_id }, null, `${data_id}`);
 }
+
+// Handle browser back/forward navigation
+window.addEventListener("popstate", function (event) {
+    if (event.state && event.state.pageId) {
+        // Load the content without pushing a new state
+        loadContent(event.state.pageId);
+        // Update active button
+        const buttons = document.querySelectorAll("#menu");
+        buttons.forEach((btn) => {
+            if (btn.getAttribute("data-id") === event.state.pageId) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+        });
+    } else {
+        // Handle the initial state (first page load)
+        const path = window.location.pathname.substring(1) || "home";
+        loadContent(path);
+    }
+});
+
 //save main content
 var map = new Map();
+
 //call js
 function loadScript(src, callback) {
     const script = document.createElement("script");
@@ -61,36 +84,32 @@ function loadScript(src, callback) {
 
 //current page
 document.addEventListener("DOMContentLoaded", () => {
-    //edit based on the page
     let paths = window.location.pathname;
+    let initialPageId;
 
     if (paths === "/" || paths === "/index.php") {
+        initialPageId = "home";
         loadScript("../js/home.js", () => {
             homefunc();
         });
     } else {
         // Extract the filename without extension
-        let pageName = paths.split("/").pop().replace(".php", "");
-
-        loadScript(`../js/${pageName}.js`, () => {
-            if (typeof window[`${pageName}func`] === "function") {
-                window[`${pageName}func`]();
+        initialPageId = paths.split("/").pop().replace(".php", "");
+        loadScript(`../js/${initialPageId}.js`, () => {
+            if (typeof window[`${initialPageId}func`] === "function") {
+                window[`${initialPageId}func`]();
             }
         });
     }
-    //edit based on the page
 
+    // Save initial content
     const content = document.getElementById("main-content").innerHTML;
-    const path = window.location.pathname.substring(1);
-    let contentID;
-    if (path === "") {
-        contentID = "home";
-    } else if (path === "index.php") {
-        contentID = "home";
-    }
-    map.set(contentID, content);
+    map.set(initialPageId, content);
+
+    // Set initial history state
+    window.history.replaceState({ pageId: initialPageId }, null, initialPageId);
 });
-//trigger when click menu
+
 function loadContent(data_id) {
     if (map.has(data_id)) {
         document.getElementById("main-content").innerHTML = map.get(data_id);
@@ -122,7 +141,7 @@ function loadContent(data_id) {
                 switch (data_id) {
                     case "home":
                         loadScript("../js/home.js", () => {
-                            homefunc(); // Called after home.js is loaded
+                            homefunc();
                         });
                         break;
                     case "course":

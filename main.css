@@ -124,8 +124,27 @@ body {
     margin-left: 10px;
 }
 .blog-content {
-    width: 90%;
+    width: 95%;
     max-width: 600px;
+    margin-top: 20px;
+}
+.blog-content-header {
+    margin-bottom: 15px;
+}
+.blog-img {
+    margin-top: 15px;
+    width: 100%;
+    loading: lazy;
+    border: solid 1px #eeeff2;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.blog-content-body {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.blog-content-body a {
+    text-decoration: none;
 }
 @media (max-width: 1024px) {
     .back-button-container {

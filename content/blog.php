@@ -23,12 +23,12 @@
         </div>
         <div class="d-flex justify-content-center">
             <div class="blog-list" style="width: 100%; max-width: 600px;">
-                <!--
                 <button class="btn btn-blog" id="blogmenu" onclick="blogActive(this)" data-id="1">
                     <span class="badge blog-badge badge-blue">What I Learnt</span> <br>
-                    Introduction to Deep Learning <br>
-                    <span style="font-weight: lighter;">February 6, 2025</span>
+                    Deep Learning: Introduction [1/15]<br>
+                    <span style="font-weight: lighter;">February x, 2025</span>
                 </button>
+                <!--
                 <button class="btn btn-blog" id="blogmenu" onclick="blogActive(this)" data-id="2">
                     <span class="badge blog-badge badge-blue">What I Learnt</span> <br>
                     Introduction to Computer Vision <br>

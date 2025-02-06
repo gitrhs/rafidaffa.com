@@ -151,6 +151,9 @@ function loadContent(data_id) {
             case "contact":
                 contactfunc();
                 break;
+            case "blog":
+                blogfunc();
+                break;
             default:
                 console.log("no function");
         }
@@ -182,8 +185,13 @@ function loadContent(data_id) {
                             contactfunc();
                         });
                         break;
+                    case "blog":
+                        loadScript("../js/blog.js", () => {
+                            blogfunc();
+                        });
+                        break;
                     default:
-                        console.log("no function");
+                        console.log("no functions");
                 }
                 map.set(data_id, data);
             });

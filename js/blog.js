@@ -1,5 +1,9 @@
 function blogfunc() {
     loadScript("../js/MathJax.js?config=TeX-AMS-MML_HTMLorMML", () => {});
+    loadScript(
+        "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js",
+        () => {}
+    );
 }
 function blogActive(button) {
     const buttons = document.querySelectorAll("#blogmenu");

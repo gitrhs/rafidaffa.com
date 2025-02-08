@@ -161,7 +161,6 @@
                 <br><br><br>
                 <div class="d-flex justify-content-center">
                     <div class="blog-content">
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
                         <div class="blog-content-header">
                             <span class="badge blog-badge badge-blue">What I Learnt</span>
                             <h1>Deep Learning: Introduction</h1>

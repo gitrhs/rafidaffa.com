@@ -4,6 +4,92 @@ function blogfunc() {
         "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js",
         () => {}
     );
+    function generatePoints(type) {
+        const points = [];
+        for (let x = -5; x <= 5; x += 0.1) {
+            let y;
+            switch (type) {
+                case "linear":
+                    y = x;
+                    break;
+                case "sigmoid":
+                    y = 1 / (1 + Math.exp(-x));
+                    break;
+                case "tanh":
+                    y = Math.tanh(x);
+                    break;
+                case "relu":
+                    y = Math.max(0, x);
+                    break;
+                default:
+                    y = x;
+            }
+            points.push({
+                x,
+                y,
+            });
+        }
+        return points;
+    }
+
+    const colors = {
+        linear: "#2196F3",
+        sigmoid: "#4CAF50",
+        tanh: "#FF9800",
+        relu: "#E91E63",
+    };
+
+    const ctx = document.getElementById("myChart");
+    const chart = new Chart(ctx, {
+        type: "line",
+        data: {
+            datasets: [
+                {
+                    data: generatePoints("linear"),
+                    borderColor: colors.linear,
+                    borderWidth: 2,
+                    fill: false,
+                    tension: 0,
+                    pointRadius: 0,
+                    pointHoverRadius: 0,
+                },
+            ],
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false,
+                },
+            },
+            scales: {
+                x: {
+                    type: "linear",
+                    position: "center",
+                    grid: {
+                        color: "#ddd",
+                    },
+                },
+                y: {
+                    type: "linear",
+                    position: "center",
+                    grid: {
+                        color: "#ddd",
+                    },
+                },
+            },
+            animation: {
+                duration: 800,
+            },
+        },
+    });
+
+    function updateFunction(type) {
+        chart.data.datasets[0].data = generatePoints(type);
+        chart.data.datasets[0].borderColor = colors[type];
+        chart.update();
+    }
 }
 function blogActive(button) {
     const buttons = document.querySelectorAll("#blogmenu");

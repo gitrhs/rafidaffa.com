@@ -15,6 +15,13 @@ function loadBlogContent(data_id) {
         document.getElementById("blog-container").innerHTML = map.get(
             "blog-" + data_id
         );
+        // Fetch and execute the JavaScript even for cached content
+        fetch(`https://api.rafidaffa.com/getblog.php?type=js&id=${data_id}`)
+            .then((response) => response.text())
+            .then((script) => {
+                eval(script);
+            })
+            .catch((error) => console.error("Error fetching script:", error));
     } else {
         //loading screen
         document.getElementById("blog-container").innerHTML = `

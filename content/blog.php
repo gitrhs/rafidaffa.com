@@ -31,10 +31,8 @@
                     }elseif ($id = 2) {
                         return '<span class="badge blog-badge badge-purple">Code Lab</span>';
                     }elseif ($id = 3) {
-                        return '<span class="badge blog-badge badge-purple">Code Lab</span>';
-                    }elseif ($id = 4) {
                         return '<span class="badge blog-badge badge-green">Mind Lab</span>';
-                    }elseif ($id = 5) {
+                    }elseif ($id = 4) {
                         return '<span class="badge blog-badge badge-orange">Experience Log</span>';
                     }
                 }

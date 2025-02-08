@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.172.0/three.tsl.js"
         integrity="sha512-PiFiRajtnAStBKn2yo9z+RO3RJ6/Njc4l2KhPRuJ3jQ3J8aro4NRQpoGVNDOJNQ6Iuzou85TWxN2QGNDUyj6wA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <script src="../js/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
@@ -168,86 +169,202 @@
                             <span>Source: Machine Learning - UM | Deep Learning - KAIST</span><br>
                             <span style="font-weight: lighter;">February 8, 2025</span>
                         </div>
+                        <div class="audio-container">
+                            <style>
+                            #audioPlayer {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                background: transparent;
+                                color: #404040;
+                                font-family: Arial, sans-serif;
+                            }
+
+                            #playPause {
+                                background: transparent;
+                                border: none;
+                                cursor: pointer;
+                                padding: 0;
+                                width: 24px;
+                                height: 24px;
+                            }
+
+                            #seekBar {
+                                flex-grow: 1;
+                                appearance: none;
+                                width: 100%;
+                                height: 4px;
+                                background: #a7a7a7;
+                                border-radius: 8px;
+                                outline: none;
+                                cursor: pointer;
+                                position: relative;
+                            }
+
+                            #seekBar::-webkit-slider-runnable-track {
+                                width: 100%;
+                                height: 4px;
+                                background: #a7a7a7;
+                                border-radius: 8px;
+                            }
+
+                            #seekBar::-webkit-slider-thumb {
+                                appearance: none;
+                                width: 10px;
+                                height: 10px;
+                                background: #404040;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                margin-top: -3px;
+                            }
+
+                            #seekBar::-moz-range-progress {
+                                background: #404040;
+                                height: 4px;
+                            }
+
+                            #seekBar::-webkit-progress-value {
+                                background: #404040;
+                            }
+
+                            #seekBar::-moz-range-track {
+                                background: #a7a7a7;
+                            }
+                            </style>
+                            <audio id="customAudio">
+                                <source src="https://docs.rafidaffa.com/blog/audio/deeplearning-introduction-blog.mp3"
+                                    type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+
+                            <div id="audioPlayer">
+                                <button id="playPause">
+                                    <svg id="playIcon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 5V19L19 12L8 5Z" fill="#404040" />
+                                    </svg>
+                                    <svg id="pauseIcon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                        <path d="M6 5H10V19H6V5ZM14 5H18V19H14V5Z" fill="#404040" />
+                                    </svg>
+                                </button>
+                                <input type="range" id="seekBar" value="0" step="0.1">
+                                <span id="timeLeft">--:--</span>
+                            </div>
+
+                            <script>
+                            const audio = document.getElementById('customAudio');
+                            const playPauseBtn = document.getElementById('playPause');
+                            const playIcon = document.getElementById('playIcon');
+                            const pauseIcon = document.getElementById('pauseIcon');
+                            const timeLeft = document.getElementById('timeLeft');
+                            const seekBar = document.getElementById('seekBar');
+
+                            function formatTime(seconds) {
+                                const min = Math.floor(seconds / 60);
+                                const sec = Math.floor(seconds % 60);
+                                return `${min}:${sec.toString().padStart(2, '0')}`;
+                            }
+
+                            audio.addEventListener('loadedmetadata', () => {
+                                seekBar.max = audio.duration;
+                                timeLeft.textContent = formatTime(audio.duration);
+                            });
+
+                            audio.addEventListener('timeupdate', () => {
+                                seekBar.value = audio.currentTime;
+                                timeLeft.textContent = formatTime(audio.duration - audio.currentTime);
+                            });
+
+                            seekBar.addEventListener('input', () => {
+                                audio.currentTime = seekBar.value;
+                            });
+
+                            playPauseBtn.addEventListener('click', () => {
+                                if (audio.paused) {
+                                    audio.play();
+                                    playIcon.style.display = "none";
+                                    pauseIcon.style.display = "inline";
+                                } else {
+                                    audio.pause();
+                                    playIcon.style.display = "inline";
+                                    pauseIcon.style.display = "none";
+                                }
+                            });
+                            </script>
+                        </div>
                         <div class="blog-content-body">
                             From <a href="https://deepmind.google/research/breakthroughs/alphago/"
                                 target="_blank">AlphaGo</a> demolishing world champions, to <a
                                 href="https://deepmind.google/discover/blog/alphastar-mastering-the-real-time-strategy-game-starcraft-ii/"
                                 target="_blank">AlphaStar</a> dominating
                             StarCraft II, to <a href="https://openai.com/chatgpt/overview/" target="_blank">ChatGPT</a>
-                            writing poetry and code, to <a href="https://www.tesla.com/autopilot"
-                                target="_blank">Tesla's cars</a> driving themselves through city streets.
+                            writing poetry and code, and <a href="https://www.tesla.com/autopilot"
+                                target="_blank">Tesla's cars</a> driving themselves through city streets. Pretty
+                            amazing, right?
 
                             <br><br>
 
-                            Welcome to the age of <i>Artificial Intelligence</i>.
+                            Welcome to the age of Artificial Intelligence!
 
                             <br><br>
                             So, What is Artificial Intelligence?
                             <br>
-                            An ability to perceive, reason, act, and learn.
-
-
+                            Well, it's the ability to perceive, reason, act, and learn.
                         </div>
                         <video class="blog-img" controls autoplay loop>
                             <source src="../image/blog/whatisai.mp4" type="video/mp4">
                         </video>
                         <div class="blog-content-body">
-                            That's the goal of AI - modeling components of intelligence using neural networks that
-                            can
-                            learn from data. At its core, it's about creating systems that can extract meaningful
-                            patterns from vast amounts of information, much like how our own brains learn from
-                            experience... <span class="markyellow">by using numbers.</span>
+                            That's the goal of AI&mdash;modeling components of intelligence using neural networks that
+                            learn
+                            from data. At its core, AI is all about creating systems that extract meaningful patterns
+                            from huge amounts of information, just like how our brains learn from experience... <span
+                                class="markyellow">but with numbers.</span>
                             <br><br>
-                            Just numbers? Yes! Artificial intelligence is fundamentally about finding the right
-                            numbers
-                            (we call them <span class="marksalmon">weights</span>) that transform input
+                            Numbers? Seriously? Yep! AI is fundamentally about finding the right
+                            numbers (we call them <span class="markyellow">"weights</span>") that transform input
                             data into meaningful outputs.
-                            Whether it's identifying objects in images, translating languages, or playing chess - it
+                            Whether it's identifying objects in images, translating languages, or playing chess, it
                             all
-                            comes down to discovering the optimal values for millions or even billions of parameters
-                            through a process we call <span class="markyellow">learning</span>.
+                            boils down to finding the optimal values for millions (or even billions) of parameters
+                            through a something called <span class="markyellow">"learning"</span>.
                             <br><br>
-                            Through this series, I'll break down deep learning from its fundamentals to advanced
-                            concepts. We'll explore how these neural networks are built, trained, and applied to
-                            solve
-                            increasingly complex problems. Starting from basic neural networks that can classify
-                            simple
-                            patterns, we'll progress to sophisticated architectures that can understand images,
-                            generate
-                            text, and even create art.
+                            In this series, I'll take you on a journey through deep learning, starting with the basics
+                            and working our way up to advanced concepts. We'll explore how neural networks are built,
+                            trained, and applied to tackle increasingly complex problems. We'll start with simple neural
+                            networks that classify basic patterns and eventually move to sophisticated architectures
+                            that can understand images, generate text, and even create art. Sounds fun, right?
                         </div><br>
                         <div class="blog-content-body">
                             <h4>Understanding Neural Networks</h4>
                         </div>
                         <img src="../image/blog/ifelsememe.webp" class="blog-img" loading="lazy">
                         <div class="blog-content-body">
-                            Many people still think artificial intelligence is just full of if-else statements...
-                            not
-                            gonna lie, I used to believe that too. But once you understand how neural networks
-                            actually
-                            work, you realize it's something far more fascinating. At its core, a neural network is
-                            a
-                            mathematical model inspired by how our brains process information - through
-                            interconnected.
+                            Did you ever think artificial intelligence was just a bunch of if-else statements? Yeah, I
+                            used to believe that too. But once you understand how neural networks actually work, you'll
+                            see it's so much more fascinating.
                         </div>
                         <img src="../image/blog/neuralnetwork.jpg" class="blog-img" loading="lazy">
                         <div class="blog-content-body">
-                            When we feed data into this network, each artificial neuron processes the
-                            information using
-                            mathematical functions, passing results to other neurons until the network produces
-                            a final
-                            output. The key difference from traditional programming? Instead of following
-                            pre-written
-                            rules, these networks learn patterns from data by adjusting their internal numbers
-                            (<span class="marksalmon">weights</span>)
-                            through experience.
+                            At its core, a neural network is a mathematical model inspired by how our brains process
+                            information&mdash;through interconnected neurons. When we feed data into the network, each
+                            artificial neuron processes it using math functions and passes the results to other neurons
+                            until, finally, the network spits out an output. Cool, huh?
+
+                            The big difference from traditional programming? Instead of following pre-written rules,
+                            these networks learn patterns from data by adjusting their internal numbers weights through
+                            experience.
                             <br><br>
-                            Let's start with the simplest problem, binary classification.
+                            Let's start with the simplest problem, <span class="markyellow">binary
+                                classification</span>.
                         </div>
                         <img src="../image/blog/binaryclassification.png" class="blog-img" loading="lazy">
                         <div class="blog-content-body">
                             How do we divide the group? Of course, as a human, we can just draw a line between the
-                            group. <br><br>But how do we teach a computer to do that? The answer is using math formula!
+                            groups, right?<br><br>But how do we teach a computer to do that? The answer is...
+                            math!<br><br>
+                            The formula is:
                             <br><br><math>
                                 <mi>f</mi>
                                 <mo>(</mo>
@@ -275,82 +392,102 @@
                                 <mi>b</mi>
                             </math><br><br>
                             Where:<br>
-                            &#183; <math>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mn>1</mn>
-                                </msub>
-                            </math>
-                            and
-                            <math>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mn>2</mn>
-                                </msub>
-                            </math> are the input classification (in this case, the coordinates of our data points)<br>
-                            &#183; <math>
+                            <ul>
+                                <li><math>
+                                        <msub>
+                                            <mi>x</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                    </math>
+                                    and
+                                    <math>
+                                        <msub>
+                                            <mi>x</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                    </math> are the input classification (in this case, the coordinates of our data
+                                    points)
+                                </li>
+                                <li><math>
+                                        <msub>
+                                            <mi>w</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                    </math>
+                                    and
+                                    <math>
+                                        <msub>
+                                            <mi>w</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                    </math> are weights the computer needs to learn
+                                </li>
+                                <li><math>
+                                        <msub>
+                                            <mi>b</mi>
+                                        </msub>
+                                    </math>
+                                    is a bias term we also need to learn</li>
+                            </ul>
+                        </div>
+                        <div class="blog-content-body">
+                            These three numbers (<math>
                                 <msub>
                                     <mi>w</mi>
                                     <mn>1</mn>
                                 </msub>
-                            </math>
-                            and
-                            <math>
+                            </math>, <math>
                                 <msub>
                                     <mi>w</mi>
                                     <mn>2</mn>
                                 </msub>
-                            </math> are weights that we need to learn<br>
-                            &#183; <math>
+                            </math>, and <math>
                                 <msub>
                                     <mi>b</mi>
                                 </msub>
-                            </math>
-                            is a bias term we also need to learn
-                        </div>
-                        <div class="blog-content-body">
-                            These three numbers (w₁, w₂, and b) completely define our decision boundary - the line that
-                            separates the two classes. By adjusting these numbers, we can get different lines that
-                            divide our data points differently.
+                            </math>) completely define the decision boundary - the line that
+                            separates the two classes. Pretty neat, right?
                             <br><br>
-                            When we use the formula with any input point (x₁, x₂), a
-                            <span class="highlightgreen">positive result</span> means the point belongs to the positive
-                            class
-                            (green circles in our
-                            example), while a <span class="highlightsalmon">negative result</span> means it belongs to
-                            the
-                            negative class (red circles).
+                            When we apply this formula to a data point, if the result is <span
+                                class="highlightgreen">positive</span>, the point belongs to
+                            one class (let's say green circles); if it's <span class="highlightsalmon">negative</span>,
+                            it
+                            belongs to the other class (red
+                            circles).
                         </div>
                         <img src="../image/blog/binaryclassification2.png" class="blog-img" loading="lazy">
                         <div class="blog-content-body">
-                            So, how do we find the right values for w₁, w₂, and b? This is
-                            where the "learning" in deep learning begins. Instead of manually trying different values,
-                            we initialize these numbers randomly and let the computer learn to adjust them through a
-                            process called training, which we'll explore in the next section.
+                            So, how do we find the right values for <math>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>1</mn>
+                                </msub>
+                            </math>, <math>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>2</mn>
+                                </msub>
+                            </math>, and b? That's where "learning" begins! Instead of guessing values manually, we let
+                            the computer adjust them automatically through a process called <span
+                                class="markyellow">training</span>, which we'll
+                            explore in the next section.
                             <br><br>
-                            But there's a catch with our simple formula - it can only draw straight lines to separate
-                            our data. Think of it like trying to separate oil and water with a straight stick. Sure,
-                            that might work if they're clearly divided, but what if they're mixed in a more complex
-                            pattern? Most real-world data is exactly like that - not linearly separable.
+                            But there's a catch&mdash;our formula can only draw straight lines. And real-world data? Oh,
+                            it's
+                            rarely that simple.
                         </div>
                         <img src="../image/blog/binaryclassificationissue.png" class="blog-img" loading="lazy">
                         <div class="blog-content-body">
-                            Imagine trying to separate cats and dogs based on just height and weight. Some small dogs
-                            might be the same size as large cats, and some cats might weigh more than small dogs. No
-                            matter how you draw a straight line, you'll always have some misclassifications. This is
-                            where our simple linear model hits its limits.
+                            Imagine trying to separate cats and dogs using just height and weight. Some small dogs are
+                            the same size as big cats, right? So, no straight line can perfectly separate them.
                             <br><br>
-                            To solve this, we need something more powerful than just straight lines - we need curves,
-                            loops, and complex boundaries. But how do we create these nonlinear boundaries using our
-                            mathematical model?
+                            That's why we need something more powerful&mdash;curves, loops, and complex boundaries! And
+                            how do
+                            we create these nonlinear boundaries? With <span class="markyellow">nonlinear activation
+                                functions</span>.
                             <br><br>
-                            The answer lies in something called <span class="markyellow">nonlinear activation
-                                functions</span>. By adding these special
-                            mathematical functions to our network, we can transform our straight lines into curves,
-                            allowing us to separate data in much more sophisticated ways.
-                            <br><br>
-                            There are many nonlinear activation functions out there, but for now, let's focus on 3 most
-                            used one: Sigmoid, Tanh, and ReLU.
+                            There are plenty of them out there, but let's focus on the top three: Sigmoid, Tanh, and
+                            ReLU.
                         </div>
                         <div class="blog-content-body">
                             <div class="chart-container" style="height: 300px;">
@@ -371,7 +508,7 @@
                         <div class="blog-content-body">
                             <h4>Sigmoid</h4>
                             Sigmoid is one of the most commonly used activation functions. It works by squeezing the
-                            input into an S-shaped curve that has values <span class="markyellow">between 0 and
+                            input values into an "S-shaped" curve <span class="markyellow">between 0 and
                                 1</span>.
                             <br><br>
                             The sigmoid function is defined as:
@@ -399,26 +536,42 @@
                             </math>
                             <br><br>
                             Where:<br>
-                            &#183; x is the output of our linear function (x₁w₁ + x₂w₂ + b)<br>
+                            &#183; x is the output of our linear function (<math>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <mo>+</mo>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mo>+</mo>
+                                <mi>b</mi>
+                            </math>)<br>
                             &#183; e is Euler's number (approximately 2.71828).
                         </div>
                         <div class="blog-content-body">
                             <h5>When should we use Sigmoid?</h5>
-                            Sigmoid is primarily used in the <span class="markyellow">final layer of neural networks
-                                when we need probability
-                                outputs</span>, such as in binary classification problems. For example, in spam
-                            detection, an
-                            output less than 0.5 would indicate "not spam" while greater than 0.5 would indicate "spam"
-                            (we'll talk more about this in later sections!).
+                            Mostly in the <span class="markyellow">final layer</span> of a neural network when we need
+                            probabilities. For instance, in
+                            spam detection, outputs below 0.5 mean "not spam," and above 0.5 mean "spam."
                         </div>
                         <div class="blog-content-body">
-                            <h4>Hyperbolic Tangent (tanh)</h4>
-                            Hyperbolic Tangent (tanh) is similar to sigmoid but with a key difference - instead of
-                            squeezing values between 0 and 1, it squeezes them <span class="markyellow">between -1 and
-                                1</span>. This makes tanh a
-                            zero-centered function, which is often beneficial for learning.
+                            <h4>Hyperbolic Tangent (Tanh)</h4>
+                            Tanh is like Sigmoid but with a slight difference - instead of
+                            squeezing values between 0 and 1, it squeezes values <span class="markyellow">between -1 and
+                                1</span>, making it zero-centered.
                             <br><br>
-                            The tanh function is defined as:
+                            The formula is:
                             <br><br>
                             <math>
                                 <mi>tanh</mi>
@@ -459,28 +612,43 @@
                             </math>
                             <br><br>
                             Wherere:<br>
-                            &#183; x is the output of our linear function (x₁w₁ + x₂w₂ + b)<br>
+                            &#183; x is the output of our linear function (<math>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <mo>+</mo>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mo>+</mo>
+                                <mi>b</mi>
+                            </math>)<br>
                             &#183; e is Euler's number (approximately 2.71828).
                         </div>
                         <div class="blog-content-body">
                             <h5>When should we use Tanh?</h5>
-                            Tanh is commonly used in hidden layers of neural networks, particularly for data that
-                            naturally
-                            has positive and negative relationships. For example, in financial predictions where we're
-                            trying to model both gains (positive) and losses (negative), or in signal processing where
-                            waves
-                            oscillate above and below zero.
+                            It's great for hidden layers, especially when data has positive and negative relationships,
+                            like gains and losses in financial predictions.
                         </div>
                         <div class="blog-content-body">
                             <h4>Rectified Linear (ReLU)</h4>
-                            Rectified Linear Unit (ReLU) is currently the most popular activation function in deep
-                            learning, and it's surprisingly simple - it <span class="markyellow">return the input
-                                directly if it's positive, and
-                                return zero if it's negative</span>. Think of it like a filter that lets positive
-                            numbers pass
-                            through unchanged but blocks all negative numbers.
+                            And now, the most popular activation function in deep
+                            learning&mdash;ReLU! and it's so simple: if the input is <span
+                                class="highlightgreen">positive</span>,
+                            ReLU return it as-is; if it's <span class="highlightsalmon">negative</span>, it outputs
+                            zero.
                             <br><br>
-                            The ReLU function is defined as:
+                            The formula is:
                             <br><br>
                             <math>
                                 <mi>ReLU</mi>
@@ -497,7 +665,27 @@
                             </math>
                             <br><br>
                             Where:<br>
-                            &#183; x is the output of our linear function (x₁w₁ + x₂w₂ + b)<br>
+                            &#183; x is the output of our linear function (<math>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <mo>+</mo>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mo>+</mo>
+                                <mi>b</mi>
+                            </math>)<br>
                         </div>
                         <div class="blog-content-body">
                             <h5>Why ReLU?</h5>
@@ -509,16 +697,15 @@
                                 <li>It helps create sparse activations (many neurons output exactly zero), which can
                                     help networks learn more robust features</li>
                             </ul>
-                            However, ReLU does have one notable drawback: the "dying ReLU" problem, where neurons can
-                            get stuck in a state where they always output zero (we'll discuss this more when we talk
-                            about training neural networks!).
+                            But, beware of the "dying ReLU" problem, where neurons can
+                            get stuck in a state where they always output zero&mdash;we'll cover that later.
                         </div><br>
                         <div class="blog-content-body">
                             <h4>Perceptron</h4>
                         </div>
                         <img src="../image/blog/nonlinear.png" class="blog-img" loading="lazy">
                         <div class="blog-content-body">
-                            Remember our linear model from before? To make it non-linear, we can upgrade our formula
+                            Remember our linear model formula? To make it non-linear, we simply upgrade our formula
                             <br>from: <br><math>
                                 <mover>
                                     <mi>y</mi>
@@ -620,44 +807,67 @@
                         <img src="../image/blog/mlp.png" class="blog-img" loading="lazy">
                         <div class="blog-content-body">
                             The image above is an example of a neural network with one hidden layer (we usually call it
-                            a single-layer perceptron). It consists of an input layer, one hidden layer with 4 nodes (z₁
-                            to z₄), and an output layer. Each z represents a node that processes information using
+                            a single-layer perceptron). It consists of an input layer, one hidden layer with 4 nodes (
+                            <math>
+                                <msub>
+
+                                    <mi>z</mi>
+                                    <mn>1</mn>
+                                </msub>
+                            </math>
+                            to <math>
+                                <msub>
+                                    <mi>z</mi>
+                                    <mn>4</mn>
+                                </msub>
+                            </math>), and an output layer. Each z represents a node that processes information using
                             weights (w) and activation functions (g).
                             <br><br>
-                            In real-world problems, we need more layers to solve complex tasks. For example, recent
+                            In real-world problems, <span class="markyellow">we need more layers to solve complex
+                                tasks</span>. For example, recent
                             large language models demonstrate this scale: ChatGPT uses 96 layers with approximately 175
                             billion parameters total, while DeepSeek uses 61 layers with about 671 billion parameters.
-                            This is where Multi-Layer Perceptron (MLP) architecture comes in - it allows us to stack
+                            This is where Multi-Layer Perceptron (MLP) architecture comes in&mdash;it allows us to stack
                             multiple layers to handle increasingly complex problems.
                             <br><br>
-                            <h5>Why do we stack more layers?</h5>
+                            <h5>Why more complex tasks = more layer?</h5>
                             Imagine each layer as adding a new dimension to our problem-solving space. With one hidden
-                            layer, it's like we're trying to separate data in 2D - we can only draw lines or curves on a
+                            layer, it's like we're trying to separate data in 2D&mdash;we can only draw lines or curves
+                            on a
                             flat surface. But what if our data is too complex to be separated in 2D?
                         </div>
                         <img src="../image/blog/addinglayer.png" class="blog-img" loading="lazy">
                         <div class="blog-content-body">
                             By adding more layers, we're essentially lifting our data into higher dimensions where the
-                            separation becomes possible. It's like if you had two tangled strings on a table (2D) - they
+                            separation becomes possible. It's like if you had two tangled strings on a table
+                            (2D)&mdash;they
                             might be impossible to separate without lifting one over the other (moving to 3D). Neural
-                            networks use the same principle - by stacking more layers, they can transform and separate
+                            networks use the same principle&mdash;by stacking more layers, they can transform and
+                            separate
                             complex data patterns that would be impossible to untangle in lower dimensions.
                             <br><br>
-                            So, to sum up, more complex problems = more layers.
+                            So, to sum up the explanation, <span class="markyellow">more complex problems = more
+                                layers</span>.
                             <br><br>
-                            <h5>How do we know that we have enough layers?</h5>
-                            We add more layers if our model is underfit and reduce the layer if our model is overfit. We
-                            will explain more about this in the next part.
+                            But don't overdo it! If your model is underfitting, add layers; if it's overfitting, reduce
+                            them. We'll dive deeper into this in the next part.
+                            <br><br>
+                            <button class="btn btn-main btn-max button-border" style="height: auto !important;">
+                                > Deep Learning: Training Fundamentals [2/15]<br>
+                                <small class="text-silent">Coming Soon</small>
+                            </button>
                             <hr>
                             References:
                             <div class="references">
 
                                 <ul>
                                     <li>KAIST. (2025). CS492I - <a
-                                            href="https://docs.rafidaffa.com/KAIST/deep%20learning/lecture/1.%20introduction%20%284%29-7.pdf">Introduction
+                                            href="https://docs.rafidaffa.com/KAIST/deep%20learning/lecture/1.%20introduction%20%284%29-7.pdf"
+                                            target="_blank">Introduction
                                             to Deep Learning: Introduction.</a></li>
                                     <li>KAIST. (2025). CS492I - <a
-                                            href="https://docs.rafidaffa.com/KAIST/deep%20learning/lecture/2.%20neural%20network%20basics-2.pdf">Introduction
+                                            href="https://docs.rafidaffa.com/KAIST/deep%20learning/lecture/2.%20neural%20network%20basics-2.pdf"
+                                            target="_blank">Introduction
                                             to Deep Learning: Neural Network Basics.</a></li>
                                     <li>MIT 6.S191: Introduction to Deep Learning. Figure Credit.</li>
                                 </ul>

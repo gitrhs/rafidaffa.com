@@ -1,4 +1,6 @@
-function blogfunc() {}
+function blogfunc() {
+    loadScript("../js/MathJax.js?config=TeX-AMS-MML_HTMLorMML", () => {});
+}
 function blogActive(button) {
     const buttons = document.querySelectorAll("#blogmenu");
     const data_id = button.getAttribute("data-id");

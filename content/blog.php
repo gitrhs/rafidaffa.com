@@ -23,11 +23,36 @@
         </div>
         <div class="d-flex justify-content-center">
             <div class="blog-list" style="width: 100%; max-width: 600px;">
-                <button class="btn btn-blog" id="blogmenu" onclick="blogActive(this)" data-id="1">
-                    <span class="badge blog-badge badge-blue">What I Learnt</span> <br>
-                    Deep Learning: Introduction [1/15]<br>
-                    <span style="font-weight: lighter;">February x, 2025</span>
+                <?php
+                $blog = json_decode(file_get_contents("https://api.rafidaffa.com/getbloglist.php"), true);
+                function badge($id){
+                    if ($id = 1) {
+                        return '<span class="badge blog-badge badge-blue">What I Learnt</span>';
+                    }elseif ($id = 2) {
+                        return '<span class="badge blog-badge badge-purple">Code Lab</span>';
+                    }elseif ($id = 3) {
+                        return '<span class="badge blog-badge badge-purple">Code Lab</span>';
+                    }elseif ($id = 4) {
+                        return '<span class="badge blog-badge badge-green">Mind Lab</span>';
+                    }elseif ($id = 5) {
+                        return '<span class="badge blog-badge badge-orange">Experience Log</span>';
+                    }
+                }
+                foreach ($blog as $blog_data) {
+                    $id = $blog_data['id'];
+                    $title = $blog_data['title'];
+                    $date = $blog_data['date'];
+                    $badge = badge($blog_data['type']);
+                    echo '
+                <button class="btn btn-blog" id="blogmenu" onclick="blogActive(this)" data-id="'.$id.'">
+                    '.$badge.' <br>
+                    '.$title.'<br>
+                    <span style="font-weight: lighter;">'.$date.'</span>
                 </button>
+                    ';
+                }
+
+                ?>
                 <!--
                 <button class="btn btn-blog" id="blogmenu" onclick="blogActive(this)" data-id="2">
                     <span class="badge blog-badge badge-blue">What I Learnt</span> <br>

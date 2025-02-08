@@ -171,22 +171,22 @@ function loadContent(data_id) {
                 document.getElementById("main-content").innerHTML = data;
                 switch (data_id) {
                     case "home":
-                        loadScript("../js/home.js", () => {
+                        loadScript("../js/home.js?dev=2.0", () => {
                             homefunc();
                         });
                         break;
                     case "course":
-                        loadScript("../js/course.js", () => {
+                        loadScript("../js/course.js?dev=2.0", () => {
                             coursefunc();
                         });
                         break;
                     case "contact":
-                        loadScript("../js/contact.js", () => {
+                        loadScript("../js/contact.js?dev=2.0", () => {
                             contactfunc();
                         });
                         break;
                     case "blog":
-                        loadScript("../js/blog.js", () => {
+                        loadScript("../js/blog.js?dev=2.0", () => {
                             blogfunc();
                         });
                         break;

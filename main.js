@@ -2,7 +2,23 @@ function burgerToogle() {
     const navbar = document.querySelector(".side-navbar");
     navbar.classList.toggle("show");
 }
+document.addEventListener("click", function (event) {
+    // First, check if we should even handle this click
+    if (event.target.closest(".burger-icon")) {
+        // If it's a click on/inside burger icon, do nothing
+        return;
+    }
 
+    const navbar = document.querySelector(".side-navbar");
+
+    // Only proceed if the menu is shown and we're on mobile view
+    if (navbar.classList.contains("show") && window.innerWidth <= 1024) {
+        // If click is outside the navbar, close it
+        if (!navbar.contains(event.target)) {
+            navbar.classList.remove("show");
+        }
+    }
+});
 function adjustNameToFit(containerId) {
     const container = document.getElementById(containerId);
     const fullName = container.getAttribute("data");
@@ -42,13 +58,49 @@ window.addEventListener("resize", onresize);
 
 function setActive(button) {
     const buttons = document.querySelectorAll("#menu");
+    const data_id = button.getAttribute("data-id");
+
+    // Check if we're already on this page
+    const currentState = window.history.state;
+    if (currentState && currentState.pageId === data_id) {
+        return; // Don't do anything if we're already on this page
+    }
+
+    // Update active button state
     buttons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
-    const data_id = button.getAttribute("data-id");
+
+    // Load content and update history
     loadContent(data_id);
+    // Use root path for home, otherwise use data_id
+    const newPath = data_id === "home" ? "/" : `/${data_id}`;
+    window.history.pushState({ pageId: data_id }, null, newPath);
 }
+
+// Handle browser back/forward navigation
+window.addEventListener("popstate", function (event) {
+    if (event.state && event.state.pageId) {
+        // Load the content without pushing a new state
+        loadContent(event.state.pageId);
+        // Update active button
+        const buttons = document.querySelectorAll("#menu");
+        buttons.forEach((btn) => {
+            if (btn.getAttribute("data-id") === event.state.pageId) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+        });
+    } else {
+        // Handle the initial state (first page load)
+        const path = window.location.pathname.substring(1) || "home";
+        loadContent(path);
+    }
+});
+
 //save main content
 var map = new Map();
+
 //call js
 function loadScript(src, callback) {
     const script = document.createElement("script");
@@ -59,23 +111,33 @@ function loadScript(src, callback) {
 
 //current page
 document.addEventListener("DOMContentLoaded", () => {
-    //edit based on the page
-    loadScript("../js/home.js", () => {
-        homefunc(); //change depends on the file
-    });
-    //edit based on the page
+    let paths = window.location.pathname;
+    let initialPageId;
 
-    const content = document.getElementById("main-content").innerHTML;
-    const path = window.location.pathname.substring(1);
-    let contentID;
-    if (path === "") {
-        contentID = "home";
-    } else if (path === "index.php") {
-        contentID = "home";
+    if (paths === "/" || paths === "/index.php") {
+        initialPageId = "home";
+        loadScript("../js/home.js", () => {
+            homefunc();
+        });
+    } else {
+        // Extract the filename without extension
+        initialPageId = paths.split("/").pop().replace(".php", "");
+        loadScript(`../js/${initialPageId}.js`, () => {
+            if (typeof window[`${initialPageId}func`] === "function") {
+                window[`${initialPageId}func`]();
+            }
+        });
     }
-    map.set(contentID, content);
+
+    // Save initial content
+    const content = document.getElementById("main-content").innerHTML;
+    map.set(initialPageId, content);
+
+    // Set initial history state - use root path for home
+    const initialPath = initialPageId === "home" ? "/" : `/${initialPageId}`;
+    window.history.replaceState({ pageId: initialPageId }, null, initialPath);
 });
-//trigger when click menu
+
 function loadContent(data_id) {
     if (map.has(data_id)) {
         document.getElementById("main-content").innerHTML = map.get(data_id);
@@ -88,6 +150,9 @@ function loadContent(data_id) {
                 break;
             case "contact":
                 contactfunc();
+                break;
+            case "blog":
+                blogfunc();
                 break;
             default:
                 console.log("no function");
@@ -106,22 +171,27 @@ function loadContent(data_id) {
                 document.getElementById("main-content").innerHTML = data;
                 switch (data_id) {
                     case "home":
-                        loadScript("../js/home.js", () => {
-                            homefunc(); // Called after home.js is loaded
+                        loadScript("../js/home.js?dev=2.5", () => {
+                            homefunc();
                         });
                         break;
                     case "course":
-                        loadScript("../js/course.js", () => {
+                        loadScript("../js/course.js?dev=2.5", () => {
                             coursefunc();
                         });
                         break;
                     case "contact":
-                        loadScript("../js/contact.js", () => {
+                        loadScript("../js/contact.js?dev=2.5", () => {
                             contactfunc();
                         });
                         break;
+                    case "blog":
+                        loadScript("../js/blog.js?dev=2.5", () => {
+                            blogfunc();
+                        });
+                        break;
                     default:
-                        console.log("no function");
+                        console.log("no functions");
                 }
                 map.set(data_id, data);
             });

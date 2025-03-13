@@ -11,11 +11,10 @@
         <div style="text-align: center;">
             <img src="icon/poernamalogo.jpg" class="projectlogo">
         </div><br>
-        <a class="d-flex align-items-center gap-1 textlink title-section" href="https://poernamafest.rafidaffa.com"
-            target="_blank">
+        <div class="gap-1 title-section">
             <h1>poernamafest</h1>
-            <arrow-icon class="togo-icon" style="margin-top: -20px; margin-right: 5px;"></arrow-icon>
-        </a>
+            <hr class="hr2">
+        </div>
         <p class="about-section">PoernamaFest is an annual cultural festival that celebrates the beauty and diversity of
             cultures from around the world, with a special focus on Indonesian music and heritage. It brings people
             together through music, art, food, and activities like workshops and cultural displays, creating a space for
@@ -37,5 +36,22 @@
             <img class="menu-icov2" src="icon/poernamaicon.png" />
             <span>View Project Archive</span>
         </a><br><br>
+        <h3 class="text-center">Website Guidelines</h3>
+        <img src="image/poernamafest/1.jpg" class="projectimg" loading="lazy">
+        <img src="image/poernamafest/2.jpg" class="projectimg" loading="lazy">
+        <img src="image/poernamafest/3.jpg" class="projectimg" loading="lazy">
+        <img src="image/poernamafest/4-2.jpg" class="projectimg" loading="lazy">
+        <img src="image/poernamafest/5.jpg" class="projectimg" loading="lazy">
+        <img src="image/poernamafest/6.jpg" class="projectimg" loading="lazy">
+        <img src="image/poernamafest/7.jpg" class="projectimg" loading="lazy">
+        <img src="image/poernamafest/8.jpg" class="projectimg" loading="lazy">
+        <img src="image/poernamafest/9.jpg" class="projectimg" loading="lazy">
+        <br><br>
+        <div class="text-center text-silent text14">
+            &#169;<script>
+            document.write(new Date().getFullYear())
+            </script> Rafi Daffa Ramadhani. All rights reserved.
+        </div>
+        <br>
     </div>
 </div>

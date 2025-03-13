@@ -61,22 +61,22 @@
         </p>
         <div class="row">
             <div class="col-6 col-sm-5 col-lg-4 col-xl-3">
-                <button type="button" class="btn btn-main btn-max d-flex align-items-center button-border">
+                <a type="button" href="/resume" class="btn btn-main btn-max d-flex align-items-center button-border">
                     <span class="menu-icon">
                         <resume-icon class="menu-icon-data">
                         </resume-icon>
                     </span>
                     <span>My Resume</span>
-                </button>
+                </a>
             </div>
             <div class="col-6 col-sm-5 col-lg-4 col-xl-3" style="margin-left: -15px;">
-                <button type="button" class="btn btn-main btn-max d-flex align-items-center button-border">
+                <a type="button" href="/contact" class="btn btn-main btn-max d-flex align-items-center button-border">
                     <span class="menu-icon">
                         <contact-icon class="menu-icon-data">
                         </contact-icon>
                     </span>
                     <span>Contact Me</span>
-                </button>
+                </a>
             </div>
         </div>
         <br>
@@ -395,5 +395,3 @@
         <br>
     </div>
 </div>
-
-<div style="height: 50px"></div>

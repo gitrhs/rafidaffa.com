@@ -29,10 +29,10 @@
         <img src="../resources/rafi_daffa_resume.jpg" alt="Rafi Daffa Resume"
             style="width: 100%; height: auto; border: solid 1px #404040;">
     </div>
-</div>
+</div><br>
 <div class="text-center text-silent text14">
     &#169;<script>
     document.write(new Date().getFullYear())
     </script> Rafi Daffa Ramadhani. All rights reserved.
 </div>
-<div style="height: 70px"></div>
+<br>

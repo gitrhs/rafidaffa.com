@@ -22,26 +22,29 @@
         <h5 class="contact-info">Connect with me: <a href="https://linkedin.com/in/rafi-daffa" target="_blank"
                 class="hrefnocolor">linkedin.com/in/rafi-daffa</a></h5>
         <br>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <span class="animated-label" id="nameLabel">Name</span>
-                <input type="text" class="contact-control form-control contact-form" placeholder="Name" id="nameInput">
+        <form id="contactForm" method="POST" action="message.php">
+            <div class="row">
+                <div class="col-12 col-md-6" style="margin-top: 5px;">
+                    <span class="animated-label" id="nameLabel">Name</span>
+                    <input type="text" class="contact-control form-control contact-form" name="name" placeholder="Name"
+                        id="nameInput">
+                </div>
+                <div class="col-12 col-md-6" style="margin-top: 5px;">
+                    <span class="animated-label" id="emailLabel">Email</span>
+                    <input type="email" class="contact-control form-control contact-form" name="email"
+                        placeholder="Email" id="emailInput">
+                </div>
+                <div class="col-12" style="margin-top: 5px;">
+                    <label for="autoExpandTextarea" class="form-label">Message</label>
+                    <textarea class="contact-control form-control contact-form" name="message" id="autoExpandTextarea"
+                        rows="1" placeholder="Message"></textarea>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-                <span class="animated-label" id="emailLabel">Email</span>
-                <input type="email" class="contact-control form-control contact-form" placeholder="Email"
-                    id="emailInput">
+            <br>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-main active btn-submit" id="submitContact">Submit</button>
             </div>
-            <div class="col-12">
-                <label for="autoExpandTextarea" class="form-label">Message</label>
-                <textarea class="contact-control form-control contact-form" id="autoExpandTextarea" rows="1"
-                    placeholder="Message"></textarea>
-            </div>
-        </div>
+        </form><br>
         <br>
-        <div class="d-flex justify-content-end">
-            <button type="button" class="btn btn-main active btn-submit" id="submitContact">Submit</button>
-        </div>
     </div>
-    <br><br>
 </div>

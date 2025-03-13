@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include "conf.php"; ?>
 
 <head>
     <meta charset="utf-8" />
@@ -7,8 +8,11 @@
     <title>Rafi Daffa Ramadhani</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="main.css" />
-    <script src="icon.js"></script>
+    <link rel="stylesheet" href="main.css?dev=<?php echo $version; ?>" />
+    <script src="icon.js?dev=<?php echo $version; ?>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.172.0/three.tsl.js"
+        integrity="sha512-PiFiRajtnAStBKn2yo9z+RO3RJ6/Njc4l2KhPRuJ3jQ3J8aro4NRQpoGVNDOJNQ6Iuzou85TWxN2QGNDUyj6wA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -36,7 +40,6 @@
                     </span>
                     <span>Home</span>
                 </button>
-                <!--
                 <button id="menu" data-id="blog" type="button" class="btn btn-main btn-max d-flex align-items-center"
                     onclick="setActive(this)">
                     <span class="menu-icon">
@@ -44,7 +47,6 @@
                     </span>
                     <span>Blog</span>
                 </button>
--->
             </div>
             <div class="navbar-section">
                 <p class="text-silent navtitle">Me</p>
@@ -154,7 +156,6 @@
             </div>
         </div>
         <div class="col">
-
             <div class="main-content" id="main-content">
                 <?php
                     include(__DIR__.'/content/home.php');
@@ -165,6 +166,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js" async></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -178,7 +180,7 @@
     }
     </style>
     <!--trash ended-->
-    <script src="main.js"></script>
+    <script src="main.js?dev=<?php echo $version; ?>"></script>
 </body>
 
 </html>

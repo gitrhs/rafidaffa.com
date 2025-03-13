@@ -187,6 +187,24 @@
             tracking, and multi-currency financial systems.
         </div>
         <div class="about-section">
+            <p class="text-silent">Experience</p>
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap gap-2">
+                    <img src="icon/xq.png" alt="kaist" class="education-image" />
+                    <div>
+                        <p><b>AI Engineer Intern</b></p>
+                        <a class="d-flex align-items-center gap-1 textlink" href="https://www.xquisite.ai"
+                            target="_blank">Xquisite AI<arrow-icon class="togo-icon" style="margin-top: -1px;">
+                            </arrow-icon></a>
+                    </div>
+                </div>
+                <p class="text-silent">Feb 2025 - Mar 2025</p>
+            </div>
+            Developed <span class="markblue">AvatarAI</span>, a real-time AI video conversations using Qdrant vector
+            database, LLM response
+            generation, and avatar animation. Created seamless AI-powered video call experiences for user interactions.
+        </div>
+        <div class="about-section">
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="d-flex flex-wrap gap-2">
                     <img src="icon/poernamafest.png" alt="poernamafest" class="education-image" />
@@ -237,115 +255,133 @@
             <hr>
             <div class="menu-item-content">
                 <div id="frontend-content" class="row text-center">
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/html.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/css.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/js.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/react.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/reactnative.jpg" class="imgskills">
                     </div>
                 </div>
                 <div id="backend-content" class="row text-center hidden">
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/python.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/java.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/php.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/django.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/flask.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/springboot.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/mysql.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/sqlite.jpg" class="imgskills">
+                    </div>
+                    <div class="col-md-2 col-3">
+                        <img src="skills/qdrant.png" class="imgskills">
+                    </div>
+                    <div class="col-md-2 col-3">
+                        <img src="skills/fastapi.png" class="imgskills">
                     </div>
                 </div>
                 <div id="package-content" class="row text-center hidden">
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
+                        <img src="skills/whisper.png" class="imgskills">
+                    </div>
+                    <div class="col-md-2 col-3">
+                        <img src="skills/langchain.png" class="imgskills">
+                    </div>
+                    <div class="col-md-2 col-3">
                         <img src="skills/bootstrap.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
+                        <img src="skills/gradio.png" class="imgskills">
+                    </div>
+                    <div class="col-md-2 col-3">
                         <img src="skills/tailwind.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/mui.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/uikitten.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/jquery.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/keras.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/tensorflow.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/pytorch.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/numpy.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/pandas.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/gsap.jpg" class="imgskills">
                     </div>
                 </div>
                 <div id="software-content" class="row text-center hidden">
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
+                        <img src="skills/ubuntu.png" class="imgskills">
+                    </div>
+                    <div class="col-md-2 col-3">
                         <img src="skills/vscode.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/github.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/figma.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/postman.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/jupyter.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/googlecolab.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/canva.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/powerpoint.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/excel.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/word.jpg" class="imgskills">
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-md-2 col-3">
                         <img src="skills/utm.jpg" class="imgskills">
                     </div>
                 </div>

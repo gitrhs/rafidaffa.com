@@ -595,7 +595,8 @@ body {
 }
 
 .imgskills {
-    width: 75%;
+    width: 80%;
+    max-width: 70px;
     height: auto;
     object-fit: contain;
     margin-bottom: 20px;

@@ -31,20 +31,17 @@
             <div class="value">A Live video chat with AvatarAI</div>
         </div><br>
         <h3>How it works?</h3>
-        <img src="image/avatarAI/avataraiflow.png" class="projectimg" loading="lazy">
+        <img src="image/avatarAI/avatarAI-flow-Fixed.png" class="projectimg" loading="lazy">
         <ol type="1">
             <li><b>Question Input (Audio)</b>: The user asks a question verbally in Bahasa Indonesia.</li>
             <li><b>Speech to Text</b>: The audio question is processed through speech recognition to convert it into
                 text format (creating the subtitle).</li>
             <li>
-                <b>Embedding</b>: These text are transformed into vector embeddings (numerical representations that
-                capture
-                semantic meaning).
+                <b>Embedding</b>: The text subtitle is transformed into vector embeddings (numerical representations
+                that capture semantic meaning).
             </li>
-            <li><b>Vector Database Storage</b>: The embeddings are stored in a vector database, which enables semantic
-                searching.</li>
-            <li><b>Semantic Search</b>: When a query is made, the system returns the top 3 most semantically relevant
-                answers from the database.</li>
+            <li><b>Semantic Search</b>: The system searches the Vector Database using these embeddings.</li>
+            <li><b>Vector Database</b>: Returns the top 3 most semantically relevant answers.</li>
             <li><b>LLM Processing</b>: A Large Language Model processes the unstructured answers into a coherent,
                 conversational script.</li>
             <li><b>Text to Speech</b>: The text response is converted back to audio.</li>

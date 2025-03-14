@@ -40,12 +40,9 @@
             <li><b>Speech to Text</b>: The audio question is processed through speech recognition to convert it into
                 text format (creating the subtitle).</li>
             <li>
-                <b>Chunking & Embedding</b><br>
-                <ul style="list-style-type:circle;">
-                    <li>The text is broken down into manageable chunks</li>
-                    <li>These chunks are transformed into vector embeddings (numerical representations that capture
-                        semantic meaning)</li>
-                </ul>
+                <b>Chunking & Embedding</b>These chunks are transformed into vector embeddings (numerical
+                representations that capture
+                semantic meaning).
             </li>
             <li><b>Vector Database Storage</b>: The embeddings are stored in a vector database, which enables semantic
                 searching.</li>

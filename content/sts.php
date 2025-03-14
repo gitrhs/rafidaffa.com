@@ -34,7 +34,7 @@
             <div class="value">Live audio chat.</div>
         </div><br>
         <h3>How it works?</h3>
-        <img src="image/avatarai/flow2.png" class="projectimg" loading="lazy">
+        <img src="image/avatarai/stsflow.png" class="projectimg" loading="lazy">
         <ol type="1">
             <li><b>Question Input (Audio)</b>: The user asks a question verbally in Bahasa Indonesia.</li>
             <li><b>Speech to Text</b>: The audio question is processed through speech recognition to convert it into

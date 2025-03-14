@@ -31,7 +31,7 @@
             <div class="value">A Live video chat with AvatarAI.</div>
         </div><br>
         <h3>How it works?</h3>
-        <img src="image/avatarai/flow.png" class="projectimg" loading="lazy">
+        <img src="image/avatarai/avataraiflow.png" class="projectimg" loading="lazy">
         <ol type="1">
             <li><b>Question Input (Audio)</b>: The user asks a question verbally in Bahasa Indonesia.</li>
             <li><b>Speech to Text</b>: The audio question is processed through speech recognition to convert it into

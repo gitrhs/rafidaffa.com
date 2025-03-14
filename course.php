@@ -10,9 +10,6 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="main.css?dev=<?php echo $version; ?>" />
     <script src="icon.js?dev=<?php echo $version; ?>"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.172.0/three.tsl.js"
-        integrity="sha512-PiFiRajtnAStBKn2yo9z+RO3RJ6/Njc4l2KhPRuJ3jQ3J8aro4NRQpoGVNDOJNQ6Iuzou85TWxN2QGNDUyj6wA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -83,6 +80,20 @@
             </div>
             <div class="navbar-section">
                 <p class="text-silent navtitle">Projects</p>
+                <button id="menu" data-id="avatarai" type="button"
+                    class="btn btn-main btn-max d-flex align-items-center" onclick="setActive(this)">
+                    <span class="menu-icov2">
+                        <robot-icon class="menu-icon-data"></robot-icon>
+                    </span>
+                    <span>AvatarAI</span>
+                </button>
+                <button id="menu" data-id="sts" type="button" class="btn btn-main btn-max d-flex align-items-center"
+                    onclick="setActive(this)">
+                    <span class="menu-icov2">
+                        <voicechat-icon class="menu-icon-data"></voicechat-icon>
+                    </span>
+                    <span>STS ChatBot</span>
+                </button>
                 <button id="menu" data-id="umnotes" type="button" class="btn btn-main btn-max d-flex align-items-center"
                     onclick="setActive(this)">
                     <img class="menu-icov2" src="icon/umnoteslow.png" />

@@ -899,3 +899,6 @@ textarea {
     padding-right: 5px;
     color: #4d99f7;
 }
+li:not(:last-child) {
+    margin-bottom: 5px;
+}

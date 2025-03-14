@@ -30,8 +30,8 @@
                 </p>
             </div>
             <div class="navbar-section">
-                <button id="menu" data-id="home" type="button"
-                    class="btn btn-main active btn-max d-flex align-items-center" onclick="setActive(this)">
+                <button id="menu" data-id="home" type="button" class="btn btn-main btn-max d-flex align-items-center"
+                    onclick="setActive(this)">
                     <span class="menu-icon">
                         <home-icon class="menu-icon-data"></home-icon>
                     </span>
@@ -81,7 +81,7 @@
             <div class="navbar-section">
                 <p class="text-silent navtitle">Projects</p>
                 <button id="menu" data-id="avatarai" type="button"
-                    class="btn btn-main btn-max d-flex align-items-center" onclick="setActive(this)">
+                    class="btn btn-main btn-max active d-flex align-items-center" onclick="setActive(this)">
                     <span class="menu-icov2">
                         <robot-icon class="menu-icon-data"></robot-icon>
                     </span>
@@ -169,7 +169,7 @@
         <div class="col">
             <div class="main-content" id="main-content">
                 <?php
-                    include(__DIR__.'/content/home.php');
+                    include(__DIR__.'/content/poernamafest.php');
                 ?>
             </div>
         </div>

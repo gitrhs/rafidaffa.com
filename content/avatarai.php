@@ -57,7 +57,9 @@
         <br>
         <h3 class="text-center">Video Demonstration</h3>
         <iframe src="https://www.youtube.com/embed/qQmri8_rshg?si=XisBeUfN0ukCzZ0N" class="projectimg"
-            style="aspect-ratio: 3/2;"></iframe>
+            style="aspect-ratio: 3/2;" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br><br>
         <div class="text-center text-silent text14">
             &#169;<script>

@@ -169,7 +169,7 @@
         <div class="col">
             <div class="main-content" id="main-content">
                 <?php
-                    include(__DIR__.'/content/poernamafest.php');
+                    include(__DIR__.'/content/sts.php');
                 ?>
             </div>
         </div>

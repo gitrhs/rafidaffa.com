@@ -29,9 +29,9 @@
             <div class="label">Timeline:</div>
             <div class="value">February 2025 - March 2025</div>
             <div class="label">Purpose:</div>
-            <div class="value">This is the project I made during my internship at XquisiteAI, Indonesia.</div>
+            <div class="value">This is the project I made during my internship at XquisiteAI, Indonesia</div>
             <div class="label">Result:</div>
-            <div class="value">Live audio chat.</div>
+            <div class="value">Live audio chat</div>
         </div><br>
         <h3>How it works?</h3>
         <img src="image/avatarai/stsflow.png" class="projectimg" loading="lazy">

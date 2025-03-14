@@ -40,7 +40,7 @@
             <li><b>Speech to Text</b>: The audio question is processed through speech recognition to convert it into
                 text format (creating the subtitle).</li>
             <li>
-                <b>Chunking & Embedding</b>These chunks are transformed into vector embeddings (numerical
+                <b>Embedding</b>: These chunks are transformed into vector embeddings (numerical
                 representations that capture
                 semantic meaning).
             </li>

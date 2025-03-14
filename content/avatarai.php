@@ -37,7 +37,7 @@
             <li><b>Speech to Text</b>: The audio question is processed through speech recognition to convert it into
                 text format (creating the subtitle).</li>
             <li>
-                <b>Embedding</b>These text are transformed into vector embeddings (numerical representations that
+                <b>Embedding</b>: These text are transformed into vector embeddings (numerical representations that
                 capture
                 semantic meaning).
             </li>

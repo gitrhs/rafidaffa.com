@@ -15,13 +15,13 @@
 <body>
     <div class="row" style="position: relative">
         <?php
-        $page = "home";
+        $page = "senarafest";
         include('sidebar.php');
         ?>
         <div class="col">
             <div class="main-content" id="main-content">
                 <?php
-                    include(__DIR__.'/content/home.php');
+                    include(__DIR__.'/content/poernamafest.php');
                 ?>
             </div>
         </div>

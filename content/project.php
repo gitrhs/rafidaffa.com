@@ -54,7 +54,7 @@
                                 <div class="project-image-container">
                                     <img src="image/project/senarafest.png">
                                     <div class="image-overlay">
-                                        <a href="https://senarafest.com" target="_blank"
+                                        <a href="https://senara.ppimalaysia.id/" target="_blank"
                                             class="anone badge overlay-btn">Website</a>
                                         <a href="" class="anone badge overlay-btn">Project Details</a>
                                     </div>

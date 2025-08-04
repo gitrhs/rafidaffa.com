@@ -94,6 +94,14 @@
             <img class="menu-icov2" src="icon/poernamaicon.png" />
             <span>poernamafest Store</span>
         </button>
+        <button id="menu" data-id="project" type="button"
+            class="btn btn-main btn-max d-flex align-items-center <?php if ($page == "project") {echo "active"; } ?>"
+            onclick="setActive(this)">
+            <span class="menu-icon">
+                <project-icon class="menu-icon-data"></project-icon>
+            </span>
+            <span>All Projects</span>
+        </button>
     </div>
     <div class="navbar-section">
         <p class="text-silent navtitle">Social</p>

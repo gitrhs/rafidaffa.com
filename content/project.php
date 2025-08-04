@@ -30,11 +30,10 @@
                                         Senarafest</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/zikra.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                            class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/zikra.jpg" class="contributor-img"
+                                            style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -70,9 +69,8 @@
                                         Student Database</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                            class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -108,11 +106,10 @@
                                         Form Maker</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
+                                            class="contributor-img" style="margin-right: -10px;">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                            class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -154,10 +151,9 @@
                                     <div class="project-title">
                                         AvatarAI</div>
                                     <div class="contributor d-flex">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                        <img src="image/profile/misbah.jpg" class="contributor-img"
+                                            style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -192,10 +188,9 @@
                                     <div class="project-title">
                                         STS ChatBot</div>
                                     <div class="contributor d-flex">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                        <img src="image/profile/misbah.jpg" class="contributor-img"
+                                            style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -231,9 +226,8 @@
                                         Whisper of the Path</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                            class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -266,8 +260,7 @@
                                     <div class="project-title">
                                         PPIM Calendar</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -303,9 +296,8 @@
                                         UM Notes</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                            class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -341,10 +333,9 @@
                                     <div class="project-title">
                                         Poernamafest</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/keiko.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                        <img src="image/profile/keiko.jpg" class="contributor-img"
+                                            style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -381,9 +372,8 @@
                                         Poernamafest Store</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px; margin-right: -10px;">
-                                        <img src="image/profile/rafi.jpg"
-                                            style="width: 30px; height: 30px; border: solid 1px #FFFFFF; border-radius: 50px;">
+                                            class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/rafi.jpg" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">

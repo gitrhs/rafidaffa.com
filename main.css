@@ -1020,8 +1020,12 @@ li:not(:last-child) {
 }
 
 .project-card:hover .contributor img {
-    animation: pulse 2s infinite;
-    border-color: #49a2f5;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    border-color: #e6f3ff;
 }
 
 @keyframes pulse {
@@ -1033,6 +1037,17 @@ li:not(:last-child) {
     }
     100% {
         transform: scale(1);
+    }
+}
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 2px);
+    }
+    to {
+        transform: translate(0, -0px);
     }
 }
 
@@ -1052,4 +1067,10 @@ li:not(:last-child) {
 .hr0-10 {
     border-top: solid 1px #e6f3ff;
     margin-bottom: 10px;
+}
+.contributor-img {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 50px;
 }

@@ -29,11 +29,11 @@
                                     <div class="project-title">
                                         Senarafest</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/malva.jpg" class="contributor-img"
+                                        <img src="image/profile/malva.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/zikra.jpg" class="contributor-img"
+                                        <img src="image/profile/zikra.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -48,7 +48,7 @@
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -70,8 +70,8 @@
                                         Student Database</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            class="contributor-img" style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                            loading="lazy" class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -84,10 +84,10 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">php</span>
+                                        <span class="badge blog-badge badge-green">php</span>
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -107,10 +107,10 @@
                                         Form Maker</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            class="contributor-img" style="margin-right: -10px;">
+                                            loading="lazy" class="contributor-img" style="margin-right: -10px;">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            class="contributor-img" style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                            loading="lazy" class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -123,10 +123,10 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">php</span>
+                                        <span class="badge blog-badge badge-green">php</span>
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -152,9 +152,9 @@
                                     <div class="project-title">
                                         AvatarAI</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/misbah.jpg" class="contributor-img"
+                                        <img src="image/profile/misbah.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -167,10 +167,10 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">Python</span>
+                                        <span class="badge blog-badge badge-green">Python</span>
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -189,9 +189,9 @@
                                     <div class="project-title">
                                         STS ChatBot</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/misbah.jpg" class="contributor-img"
+                                        <img src="image/profile/misbah.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -204,10 +204,10 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">Python</span>
+                                        <span class="badge blog-badge badge-green">Python</span>
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -226,9 +226,9 @@
                                     <div class="project-title">
                                         Whisper of the Path</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/alyssa.jpg" class="contributor-img"
+                                        <img src="image/profile/alyssa.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -241,8 +241,9 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">Unity 5</span>
-                                        <span class="badge blog-badge badge-blue">C#</span>
+                                        <span class="badge blog-badge badge-blue">Unity 6</span>
+                                        <span class="badge blog-badge badge-blue">Blender</span>
+                                        <span class="badge blog-badge badge-green">C#</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -261,7 +262,7 @@
                                     <div class="project-title">
                                         PPIM Calendar</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -276,7 +277,7 @@
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -298,10 +299,10 @@
                                         Word Autocomplete</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            class="contributor-img" style="margin-right: -10px;">
-                                        <img src="image/profile/harishankar.jpg" class="contributor-img"
+                                            loading="lazy" class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/harishankar.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -314,11 +315,11 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">Python</span>
+                                        <span class="badge blog-badge badge-green">Python</span>
                                         <span class="badge blog-badge badge-blue">Flask</span>
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -339,8 +340,8 @@
                                         KTMB Dynamic Fare</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            class="contributor-img" style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                            loading="lazy" class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -353,7 +354,8 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">Python</span>
+                                        <span class="badge blog-badge badge-green">Python</span>
+                                        <span class="badge blog-badge badge-blue">Jupyter Notebook</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -372,9 +374,9 @@
                                     <div class="project-title">
                                         UM Notes</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/nikan.jpg" class="contributor-img"
+                                        <img src="image/profile/nikan.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -387,10 +389,10 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">php</span>
+                                        <span class="badge blog-badge badge-green">php</span>
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -411,9 +413,9 @@
                                     <div class="project-title">
                                         Poernamafest</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/keiko.jpg" class="contributor-img"
+                                        <img src="image/profile/keiko.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -426,10 +428,10 @@
                                         management.
                                     </p>
                                     <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">php</span>
+                                        <span class="badge blog-badge badge-green">php</span>
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">
@@ -450,9 +452,9 @@
                                     <div class="project-title">
                                         Poernamafest Store</div>
                                     <div class="contributor d-flex">
-                                        <img src="image/profile/bimo.jpg" class="contributor-img"
+                                        <img src="image/profile/bimo.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" class="contributor-img">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>
                                 <div class="text-silent project-desc">
@@ -467,7 +469,7 @@
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-blue">HTML</span>
                                         <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-blue">Javascript</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="project-image-container">

@@ -116,6 +116,9 @@ body {
     height: 45px;
     border-bottom: solid 1px #eeeff2;
 }
+.mt20 {
+    margin-top: 20px;
+}
 .back-button {
     width: 40px;
 }
@@ -133,6 +136,13 @@ body {
 }
 .blog-img {
     margin-top: 15px;
+    width: 100%;
+    loading: lazy;
+    border: solid 1px rgb(181, 179, 179);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.blog-main-img {
     width: 100%;
     loading: lazy;
     border: solid 1px #eeeff2;
@@ -202,6 +212,10 @@ body {
     width: max(50%, 600px);
     max-width: 90%;
 }
+.mdcontent {
+    width: max(80%, 800px);
+    max-width: min(90%, 1200px);
+}
 .bigcontent {
     width: max(80%, 1000px);
     max-width: min(90%, 1500px);
@@ -215,6 +229,7 @@ body {
     overflow-y: auto;
     max-height: 100dvh;
     scroll-behavior: smooth !important;
+    position: relative;
 }
 #limit-word {
     white-space: nowrap;
@@ -253,6 +268,9 @@ body {
     margin: 2px;
     color: #404040;
     height: 34px;
+}
+.m0 {
+    margin: 0px;
 }
 .btn-main:hover {
     background-color: #e0e0e0;
@@ -1011,11 +1029,6 @@ li:not(:last-child) {
     padding-right: 20px;
 }
 .contributor img {
-    width: 30px;
-    height: 30px;
-    border: solid 2px #ffffff;
-    border-radius: 50px;
-    margin-right: -10px;
     transition: all 0.3s ease;
 }
 
@@ -1071,6 +1084,15 @@ li:not(:last-child) {
 .contributor-img {
     width: 30px;
     height: 30px;
-    border: solid 1px #ffffff;
+    border: solid 2px #ffffff;
     border-radius: 50px;
+    loading: lazy;
+}
+.contributor-img2 {
+    width: 34px;
+    height: 34px;
+    border: solid 2px lightgray;
+    border-radius: 50px;
+    margin-right: -18px;
+    margin-top: -6px;
 }

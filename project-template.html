@@ -278,14 +278,66 @@
                                     class="contributor d-flex align-items-center gap-2"
                                 >
                                     <h1>Whispers of the Path</h1>
-                                    <img
-                                        src="image/profile/alyssa.jpg"
-                                        class="contributor-img2"
-                                    />
-                                    <img
-                                        src="image/profile/rafi2.jpg"
-                                        class="contributor-img2"
-                                    />
+                                    <div class="contributor-button">
+                                        <img
+                                            src="image/profile/alyssa.jpg"
+                                            class="contributor-img2"
+                                        />
+                                        <img
+                                            src="image/profile/rafi2.jpg"
+                                            class="contributor-img2"
+                                        />
+                                        <div class="contributor-modal">
+                                            <div class="modal-content">
+                                                <a
+                                                    href="https://www.linkedin.com/in/rafi-daffa/"
+                                                    target="_blank"
+                                                    class="d-flex align-items-center gap-1 contributor-item hrefnone"
+                                                >
+                                                    <img
+                                                        src="image/profile/rafi2.jpg"
+                                                        class="contributor-img3"
+                                                    />
+                                                    <div>
+                                                        <span>
+                                                            Rafi Daffa Ramadhani
+                                                        </span>
+                                                        <div
+                                                            class="contributor-status"
+                                                        >
+                                                            <span>
+                                                                Avatar & Game
+                                                                Developer
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a
+                                                    href="https://www.linkedin.com/in/alyssa-atmasava-87a875273/"
+                                                    target="_blank"
+                                                    class="d-flex align-items-center gap-1 contributor-item hrefnone"
+                                                >
+                                                    <img
+                                                        src="image/profile/alyssa.jpg"
+                                                        class="contributor-img3"
+                                                    />
+                                                    <div>
+                                                        <span>
+                                                            Alyssa Atmasava
+                                                        </span>
+                                                        <div
+                                                            class="contributor-status"
+                                                        >
+                                                            <span>
+                                                                Avatar & Game
+                                                                Developer
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <span
@@ -553,5 +605,23 @@
         </style>
         <!--trash ended-->
         <script src="main.js?dev=<?php echo $version; ?>"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const button = document.querySelector(".contributor-button");
+                const modal = button.querySelector(".contributor-modal");
+
+                button.addEventListener("mouseenter", function () {
+                    if (window.innerWidth <= 768) {
+                        // Mobile: align to right
+                        modal.style.left = "auto";
+                        modal.style.right = "0";
+                    } else {
+                        // Desktop: center
+                        modal.style.left = "0";
+                        modal.style.right = "auto";
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

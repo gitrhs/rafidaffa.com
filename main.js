@@ -154,6 +154,9 @@ function loadContent(data_id) {
             case "blog":
                 blogfunc();
                 break;
+            case "wotp":
+                wotpfunc();
+                break;
             default:
                 console.log("no function");
         }
@@ -171,23 +174,28 @@ function loadContent(data_id) {
                 document.getElementById("main-content").innerHTML = data;
                 switch (data_id) {
                     case "home":
-                        loadScript("../js/home.js?dev=2.5", () => {
+                        loadScript("../js/home.js?dev=2.8", () => {
                             homefunc();
                         });
                         break;
                     case "course":
-                        loadScript("../js/course.js?dev=2.5", () => {
+                        loadScript("../js/course.js?dev=2.8", () => {
                             coursefunc();
                         });
                         break;
                     case "contact":
-                        loadScript("../js/contact.js?dev=2.5", () => {
+                        loadScript("../js/contact.js?dev=2.8", () => {
                             contactfunc();
                         });
                         break;
                     case "blog":
-                        loadScript("../js/blog.js?dev=2.5", () => {
+                        loadScript("../js/blog.js?dev=2.8", () => {
                             blogfunc();
+                        });
+                        break;
+                    case "wotp":
+                        loadScript("../js/wotp.js?dev=2.8", () => {
+                            wotpfunc();
                         });
                         break;
                     default:

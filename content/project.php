@@ -249,7 +249,7 @@
                                 <div class="project-image-container">
                                     <img src="image/project/vrgame.png">
                                     <div class="image-overlay">
-                                        <a href="" class="anone badge overlay-btn">Project Details</a>
+                                        <a href="wotp.php" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>
                             </div>

@@ -6,7 +6,7 @@
         </button>
     </div>
 </div>
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center" style="overflow-x: hidden;">
     <div class="mdcontent">
         <img src="image/project/vrgame.png" class="blog-main-img" />
 
@@ -250,21 +250,3 @@
         </div>
     </div>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const button = document.querySelector(".contributor-button");
-    const modal = button.querySelector(".contributor-modal");
-
-    button.addEventListener("mouseenter", function() {
-        if (window.innerWidth <= 768) {
-            // Mobile: align to right
-            modal.style.left = "auto";
-            modal.style.right = "0";
-        } else {
-            // Desktop: center
-            modal.style.left = "0";
-            modal.style.right = "auto";
-        }
-    });
-});
-</script>

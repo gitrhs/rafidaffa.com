@@ -6,7 +6,7 @@
         </button>
     </div>
 </div>
-<div class="d-flex justify-content-center" style="overflow-x: hidden;">
+<div class="d-flex justify-content-center">
     <div class="mdcontent">
         <img src="image/project/vrgame.png" class="blog-main-img" />
 

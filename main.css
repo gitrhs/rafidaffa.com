@@ -1126,6 +1126,7 @@ li:not(:last-child) {
     width: 80vw;
     max-width: 250px;
     z-index: 5;
+    box-sizing: border-box;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);

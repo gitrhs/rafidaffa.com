@@ -298,8 +298,8 @@
                                     <div class="project-title">
                                         Word Autocomplete</div>
                                     <div class="contributor d-flex">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            loading="lazy" class="contributor-img" style="margin-right: -10px;">
+                                        <img src="image/profile/ezekiel.jpg" loading="lazy" class="contributor-img"
+                                            style="margin-right: -10px;">
                                         <img src="image/profile/harishankar.jpg" loading="lazy" class="contributor-img"
                                             style="margin-right: -10px;">
                                         <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
@@ -339,8 +339,6 @@
                                     <div class="project-title">
                                         KTMB Dynamic Fare</div>
                                     <div class="contributor d-flex">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
-                                            loading="lazy" class="contributor-img" style="margin-right: -10px;">
                                         <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
                                     </div>
                                 </div>

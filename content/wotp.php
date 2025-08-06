@@ -67,20 +67,23 @@
 
         <div class="d-flex">
             <div class="">
-                <a type="button" href="/resume" class="btn btn-main btn-max d-flex align-items-center button-border m0">
+                <a type="button"
+                    href="https://drive.google.com/file/d/1YVtj5eQeeR1QcBo-JxreYkqkY7n6DLr-/view?usp=sharing"
+                    target="_blank" class="btn btn-main btn-max d-flex align-items-center button-border m0">
                     <span class="menu-icon">
-                        <resume-icon class="menu-icon-data">
-                        </resume-icon>
+                        <project-icon class="menu-icon-data">
+                        </project-icon>
                     </span>
                     <span>Avatar File</span>
                 </a>
             </div>
             <div class="" style="margin-left: 10px">
-                <a type="button" href="/contact"
-                    class="btn btn-main btn-max d-flex align-items-center button-border m0">
+                <a type="button"
+                    href="https://drive.google.com/file/d/1NK_99qUhO1v-TcCsaZX2HnK6JFa4gzEJ/view?usp=sharing"
+                    target="_blank" class="btn btn-main btn-max d-flex align-items-center button-border m0">
                     <span class="menu-icon">
-                        <contact-icon class="menu-icon-data">
-                        </contact-icon>
+                        <project-icon class="menu-icon-data">
+                        </project-icon>
                     </span>
                     <span>Unity Game File</span>
                 </a>
@@ -94,8 +97,8 @@
         <div class="blog-content-body">
             Whispers of the Path is a virtual reality game
             developed as a project for WIG3004 - Virtual
-            Reality at University Malaya. Working within a
-            one-week timeframe, we created a complete VR
+            Reality at University Malaya. Working within a <span class="markgreen">one-week timeframe</span>
+            , we created a complete VR
             adventure experience from concept to playable
             demo.
         </div>
@@ -202,14 +205,10 @@
             the world.
         </div>
         <div class="blog-content-body">
-            This VR game runs on VR headsets with
-            performance up to 120fps for comfortable
-            gameplay. We used teleportation for player
+            We used teleportation for player
             movement to avoid motion sickness. The audio
             system uses 3D spatial sound so players can hear
-            where sounds come from in the virtual space. The
-            graphics use dynamic lighting that changes based
-            on the game environment.
+            where sounds come from in the virtual space.
         </div>
         <br />
         <h3>Game Ending</h3>

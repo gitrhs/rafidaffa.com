@@ -17,48 +17,42 @@
                 <span class="badge blog-badge badge-blue">Blender</span>
                 <span class="badge blog-badge badge-green">C#</span>
             </div>
-            <div class="contributor d-flex align-items-center gap-2">
-                <h1>Whispers of the Path</h1>
-                <div class="contributor-button">
-                    <img src="image/profile/alyssa.jpg" class="contributor-img2" />
-                    <img src="image/profile/rafi2.jpg" class="contributor-img2" />
-                    <div class="contributor-modal">
-                        <div class="modal-content">
-                            <a href="https://www.linkedin.com/in/rafi-daffa/" target="_blank"
-                                class="d-flex align-items-center gap-1 contributor-item hrefnone">
-                                <img src="image/profile/rafi2.jpg" class="contributor-img3" />
-                                <div>
-                                    <span>
-                                        Rafi Daffa Ramadhani
-                                    </span>
-                                    <div class="contributor-status">
-                                        <span>
-                                            Avatar & Game
-                                            Developer
-                                        </span>
+            <h1 class="title-with-contrib">
+                Whisper of the Path
+                <span class="contributors-inline">
+                    <span class="contributor-button">
+                        <img src="image/profile/misbah.jpg" class="contributor-img2" />
+                        <img src="image/profile/rafi2.jpg" class="contributor-img2" />
+                        <div class="contributor-modal">
+                            <div class="modal-content">
+                                <a href="https://www.linkedin.com/in/rafi-daffa/" target="_blank"
+                                    class="d-flex align-items-center gap-1 contributor-item hrefnone">
+                                    <img src="image/profile/rafi2.jpg" class="contributor-img3" />
+                                    <div>
+                                        <span>Rafi Daffa
+                                            Ramadhani</span>
+                                        <div class="contributor-status">
+                                            <span>Avatar & Game
+                                                Developer</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/alyssa-atmasava-87a875273/" target="_blank"
-                                class="d-flex align-items-center gap-1 contributor-item hrefnone">
-                                <img src="image/profile/alyssa.jpg" class="contributor-img3" />
-                                <div>
-                                    <span>
-                                        Alyssa Atmasava
-                                    </span>
-                                    <div class="contributor-status">
-                                        <span>
-                                            Avatar & Game
-                                            Developer
-                                        </span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/alyssa-atmasava-87a875273/" target="_blank"
+                                    class="d-flex align-items-center gap-1 contributor-item hrefnone">
+                                    <img src="image/profile/misbah.jpg" class="contributor-img3" />
+                                    <div>
+                                        <span>Alyssa Atmasava</span>
+                                        <div class="contributor-status">
+                                            <span>Avatar & Game
+                                                Developer</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
+                    </span>
+                </span>
+            </h1>
             <span>Project of University Malaya Course:
                 WIG3004 - Virtual Reality</span>
             <br />

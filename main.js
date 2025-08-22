@@ -122,11 +122,25 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         // Extract the filename without extension
         initialPageId = paths.split("/").pop().replace(".php", "");
-        loadScript(`../js/${initialPageId}.js`, () => {
-            if (typeof window[`${initialPageId}func`] === "function") {
-                window[`${initialPageId}func`]();
-            }
-        });
+        if (["wotp", "avatarai", "sts"].includes(initialPageId)) {
+            console.log("this is a project");
+            loadScript(`../js/project.js`, () => {
+                fetch(`../content/${initialPageId}.php`)
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("main-content").innerHTML =
+                            data;
+                        window[`projectfunc`]();
+                        map.set(initialPageId, data);
+                    });
+            });
+        } else {
+            loadScript(`../js/${initialPageId}.js`, () => {
+                if (typeof window[`${initialPageId}func`] === "function") {
+                    window[`${initialPageId}func`]();
+                }
+            });
+        }
     }
 
     // Save initial content
@@ -155,7 +169,13 @@ function loadContent(data_id) {
                 blogfunc();
                 break;
             case "wotp":
-                wotpfunc();
+                projectfunc();
+                break;
+            case "avatarai":
+                projectfunc();
+                break;
+            case "sts":
+                projectfunc();
                 break;
             default:
                 console.log("no function");
@@ -194,8 +214,18 @@ function loadContent(data_id) {
                         });
                         break;
                     case "wotp":
-                        loadScript("../js/wotp.js?dev=2.8", () => {
-                            wotpfunc();
+                        loadScript("../js/project.js?dev=2.8", () => {
+                            projectfunc();
+                        });
+                        break;
+                    case "avatarai":
+                        loadScript("../js/project.js?dev=2.8", () => {
+                            projectfunc();
+                        });
+                        break;
+                    case "sts":
+                        loadScript("../js/project.js?dev=2.8", () => {
+                            projectfunc();
                         });
                         break;
                     default:

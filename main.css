@@ -1130,7 +1130,7 @@ li:not(:last-child) {
     padding: 10px;
     width: 80vw;
     max-width: 250px;
-    z-index: 5;
+    z-index: 999999999 !important;
     box-sizing: border-box;
     opacity: 0;
     visibility: hidden;
@@ -1140,7 +1140,6 @@ li:not(:last-child) {
     cursor: default;
 }
 
-/* Show modal on hover */
 .contributor-button:hover .contributor-modal {
     opacity: 1;
     visibility: visible;
@@ -1168,4 +1167,40 @@ li:not(:last-child) {
     box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.15),
         inset -3px -3px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(1px);
+}
+.title-with-contrib {
+    display: inline;
+    line-height: 1.15;
+    margin: 0;
+}
+.contributors-inline {
+    display: inline-flex;
+    gap: 6px;
+    vertical-align: middle;
+    position: relative;
+}
+.title-with-contrib .contributor-img2 {
+    width: clamp(28px, 3vw, 36px);
+    height: clamp(28px, 3vw, 36px);
+    border: 2px solid #e8f5e9;
+    border-radius: 50%;
+}
+.title-with-contrib .contributor-button {
+    cursor: pointer;
+    display: inline-flex;
+}
+.title-with-contrib .contributor-button:hover .contributor-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+@media (max-width: 768px) {
+    .title-with-contrib .contributor-modal {
+        left: 0;
+        right: auto;
+        transform: none;
+        max-width: calc(100vw - 24px);
+        width: 240px;
+        overflow-wrap: break-word;
+    }
 }

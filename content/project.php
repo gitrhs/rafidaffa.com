@@ -27,46 +27,6 @@
                             <div>
                                 <div class="project-header d-flex align-items-end justify-content-between">
                                     <div class="project-title">
-                                        Senarafest</div>
-                                    <div class="contributor d-flex">
-                                        <img src="image/profile/malva.jpg" loading="lazy" class="contributor-img"
-                                            style="margin-right: -10px;">
-                                        <img src="image/profile/zikra.jpg" loading="lazy" class="contributor-img"
-                                            style="margin-right: -10px;">
-                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
-                                    </div>
-                                </div>
-                                <div class="text-silent project-desc">
-                                    An art exhibition website
-                                </div>
-                                <div class="project-details">
-                                    <div class="hr0-10"></div>
-                                    <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
-                                    </p>
-                                    <div class="tech-stack">
-                                        <span class="badge blog-badge badge-blue">HTML</span>
-                                        <span class="badge blog-badge badge-blue">CSS3</span>
-                                        <span class="badge blog-badge badge-green">Javascript</span>
-                                    </div>
-                                </div>
-                                <div class="project-image-container">
-                                    <img src="image/project/senarafest.png">
-                                    <div class="image-overlay">
-                                        <a href="https://senara.ppimalaysia.id/" target="_blank"
-                                            class="anone badge overlay-btn">Website</a>
-                                        <a href="" class="anone badge overlay-btn">Project Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 col-xl-4" style="margin-bottom: 25px;">
-                        <div class="project-card d-flex align-items-center">
-                            <div>
-                                <div class="project-header d-flex align-items-end justify-content-between">
-                                    <div class="project-title">
                                         Student Database</div>
                                     <div class="contributor d-flex">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuCSYchUiacL_rMjjYa-QOAzI4CFVeqYnT4Oa7t2pdcUsTXg0BQjGqqgWgKs35rHhF6c&usqp=CAU"
@@ -250,6 +210,46 @@
                                     <img src="image/project/vrgame.png">
                                     <div class="image-overlay">
                                         <a href="wotp.php" class="anone badge overlay-btn">Project Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-4" style="margin-bottom: 25px;">
+                        <div class="project-card d-flex align-items-center">
+                            <div>
+                                <div class="project-header d-flex align-items-end justify-content-between">
+                                    <div class="project-title">
+                                        Senarafest</div>
+                                    <div class="contributor d-flex">
+                                        <img src="image/profile/malva.jpg" loading="lazy" class="contributor-img"
+                                            style="margin-right: -10px;">
+                                        <img src="image/profile/zikra.jpg" loading="lazy" class="contributor-img"
+                                            style="margin-right: -10px;">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
+                                    </div>
+                                </div>
+                                <div class="text-silent project-desc">
+                                    An art exhibition website
+                                </div>
+                                <div class="project-details">
+                                    <div class="hr0-10"></div>
+                                    <p class="project-details-short-desc">
+                                        Interactive art exhibition platform with artist portfolios and event
+                                        management.
+                                    </p>
+                                    <div class="tech-stack">
+                                        <span class="badge blog-badge badge-blue">HTML</span>
+                                        <span class="badge blog-badge badge-blue">CSS3</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
+                                    </div>
+                                </div>
+                                <div class="project-image-container">
+                                    <img src="image/project/senarafest.png">
+                                    <div class="image-overlay">
+                                        <a href="https://senara.ppimalaysia.id/" target="_blank"
+                                            class="anone badge overlay-btn">Website</a>
+                                        <a href="" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>
                             </div>

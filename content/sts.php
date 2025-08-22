@@ -7,61 +7,137 @@
     </div>
 </div>
 <div class="d-flex justify-content-center">
-    <div class="content">
-        <div style="text-align: center;">
-            <img src="icon/xq.png" class="projectlogo">
-        </div><br>
-        <div class="gap-1 title-section">
-            <h1>Speech-to-Speech ChatBot</h1>
-            <hr class="hr2">
+    <div class="mdcontent">
+        <img src="image/project/sts.png" class="blog-main-img" />
+
+        <div class="blog-content-header">
+            <div>
+                <span class="badge blog-badge badge-purple">Website</span>
+                <span class="badge blog-badge badge-purple">Pipeline</span>
+                <span class="badge blog-badge badge-blue">HTML</span>
+                <span class="badge blog-badge badge-blue">CSS</span>
+                <span class="badge blog-badge badge-green">Python</span>
+                <span class="badge blog-badge badge-green">Javascript</span>
+            </div>
+            <h1 class="title-with-contrib">
+                Speech-to-Speech ChatBot
+                <span class="contributors-inline">
+                    <span class="contributor-button">
+                        <img src="image/profile/misbah.jpg" class="contributor-img2" />
+                        <img src="image/profile/rafi2.jpg" class="contributor-img2" />
+                        <div class="contributor-modal">
+                            <div class="modal-content">
+                                <a href="https://www.linkedin.com/in/rafi-daffa/" target="_blank"
+                                    class="d-flex align-items-center gap-1 contributor-item hrefnone">
+                                    <img src="image/profile/rafi2.jpg" class="contributor-img3" />
+                                    <div>
+                                        <span>Rafi Daffa
+                                            Ramadhani</span>
+                                        <div class="contributor-status">
+                                            <span>AI
+                                                Engineer</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/misbah-fahamsyah/" target="_blank"
+                                    class="d-flex align-items-center gap-1 contributor-item hrefnone">
+                                    <img src="image/profile/misbah.jpg" class="contributor-img3" />
+                                    <div>
+                                        <span>Misbah
+                                            Fahamsyah</span>
+                                        <div class="contributor-status">
+                                            <span>AI
+                                                Engineer,
+                                                Supervisor</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </span>
+                </span>
+            </h1>
+            <br />
+            <span>Project during Internship at
+                <a href="https://www.linkedin.com/company/xquisite-ai/" target="_blank" class="hrefnocolor">Xquisite
+                    AI</a></span>
+            <br />
+            <span style="font-weight: lighter">March 2025</span>
         </div>
-        <p class="about-section">
-            An interactive system that enables real-time AI-driven audio conversations in Bahasa Indonesia. STS creates
-            a seamless voice experience with a virtual assistant that can understand and respond to user questions
-            through natural conversation.
-            <br><br>
-            The workflow is similar to Avatar AI but focused on audio-only interactions, converting user speech to text,
-            processing through an LLM, and returning AI-generated spoken responses.
-        </p>
-        <div class="info">
-            <div class="label">Role:</div>
-            <div class="value">AI Engineer Intern</div>
-            <div class="label">Timeline:</div>
-            <div class="value">February 2025 - March 2025</div>
-            <div class="label">Purpose:</div>
-            <div class="value">This is the project I made during my internship at XquisiteAI, Indonesia</div>
-            <div class="label">Result:</div>
-            <div class="value">Live audio chat</div>
-        </div><br>
-        <h3>How it works?</h3>
-        <img src="image/avatarAI/sts-flow-Fixed.png" class="projectimg" loading="lazy">
-        <ol type="1">
-            <li><b>Question Input (Audio)</b>: The user asks a question verbally in Bahasa Indonesia.</li>
-            <li><b>Speech to Text</b>: The audio question is processed through speech recognition to convert it into
-                text format (creating the subtitle).</li>
-            <li>
-                <b>Embedding</b>: The text subtitle is transformed into vector embeddings (numerical representations
-                that capture semantic meaning).
-            </li>
-            <li><b>Semantic Search</b>: The system searches the Vector Database using these embeddings.</li>
-            <li><b>Vector Database</b>: Returns the top 3 most semantically relevant answers.</li>
-            <li><b>LLM Processing</b>: A Large Language Model processes the unstructured answers into a coherent,
-                conversational script.</li>
-            <li><b>Text to Speech Output</b>: The system generates an audio response that speaks the answer, creating a
-                realistic voice call experience.</li>
-        </ol>
-        <br>
-        <h3 class="text-center">Video Demonstration</h3>
-        <iframe src="https://www.youtube.com/embed/iMw0zRL1a2E?si=yHcpIKDcpYEdi_T4" class="projectimg"
-            style="aspect-ratio: 3/2;" frameborder="0"
+        <div style="
+                                    border-top: solid 1px #acb8c0;
+                                    margin-bottom: 10px;
+                                "></div>
+        <h3>Project Overview</h3>
+        <div class="blog-content-body">
+            A system for real-time spoken conversations in
+            Bahasa Indonesia. It combines speech
+            recognition, natural language processing, and
+            text-to-speech to create a direct audio-to-audio
+            interaction. Users speak their questions, the
+            system processes and retrieves the most relevant
+            answers, then responds with synthesized
+            speech—simulating the experience of talking with
+            a responsive virtual assistant.
+        </div>
+        <br />
+        <h3>How it works? (the pipeline)</h3>
+        <img src="image/avatarAI/avatarAI-flow-Fixed.png" class="blog-img" />
+        <div class="blog-content-body">
+            The process begins when a user asks a question
+            verbally. The audio is transcribed into text,
+            which is then converted into vector embeddings
+            to capture its meaning. These embeddings are
+            searched against a vector database, and the top
+            three most relevant answers are returned.
+        </div>
+        <div class="blog-content-body">
+            A large language model refines these answers
+            into a coherent script. The script is then
+            converted into audio and delivered back as
+            spoken output—creating a smooth speech-to-speech
+            interaction without requiring a visual avatar.
+        </div>
+        <br />
+        <h3>Video Demonstration</h3>
+        <iframe src="https://www.youtube.com/embed/iMw0zRL1a2E" class="projectimg" style="aspect-ratio: 560/315"
+            frameborder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <br><br>
-        <div class="text-center text-silent text14">
-            &#169;<script>
-            document.write(new Date().getFullYear())
-            </script> Rafi Daffa Ramadhani. All rights reserved.
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        <div class="blog-content-body">
+            For the demo, the system was configured to
+            provide information about
+            <a href="https://mandirisekuritas.co.id" target="_blank">Mandiri Sekuritas</a>
+            in real time. Users ask verbally, and the model
+            generates spoken responses directly.
         </div>
-        <br>
+        <br />
+        <h3>Use Cases</h3>
+        <div class="blog-content-body">
+            <b>Voice-based Customer Support</b><br />
+            The chatbot can act as a 24/7 audio-first
+            assistant for handling customer inquiries. By
+            replacing long call queues or rigid IVR menus
+            with natural conversation, it provides faster
+            and more humanlike support.
+        </div>
+        <div class="blog-content-body">
+            <b>Accessibility and Inclusion</b><br />
+            A speech-only system is useful for users who may
+            prefer or require audio communication instead of
+            text or visual formats. This expands
+            accessibility for visually impaired users and
+            others who benefit from voice interaction.
+        </div>
+        <div class="blog-content-body">
+            <b>Hands-free Assistance</b><br />
+            In contexts such as driving, field work, or
+            smart home environments, speech-to-speech
+            interaction offers a practical solution. Users
+            can ask questions and receive answers instantly
+            without needing a screen.
+        </div>
+        <br /><br />
     </div>
 </div>
+<br>

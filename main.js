@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         // Extract the filename without extension
         initialPageId = paths.split("/").pop().replace(".php", "");
-        if (["wotp", "avatarai", "sts"].includes(initialPageId)) {
+        if (["wotp", "avatarai", "sts", "umnotes"].includes(initialPageId)) {
             console.log("this is a project");
             loadScript(`../js/project.js`, () => {
                 fetch(`../content/${initialPageId}.php`)
@@ -177,6 +177,9 @@ function loadContent(data_id) {
             case "sts":
                 projectfunc();
                 break;
+            case "umnotes":
+                projectfunc();
+                break;
             default:
                 console.log("no function");
         }
@@ -224,6 +227,11 @@ function loadContent(data_id) {
                         });
                         break;
                     case "sts":
+                        loadScript("../js/project.js?dev=3", () => {
+                            projectfunc();
+                        });
+                        break;
+                    case "umnotes":
                         loadScript("../js/project.js?dev=3", () => {
                             projectfunc();
                         });

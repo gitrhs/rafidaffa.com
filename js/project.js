@@ -6,19 +6,22 @@ function projectfunc() {
 
     // position on open
     function positionModal() {
-        if (isMobile()) {
+        const x = checkBtnLocation();
+        const browserWidth = getBrowserWidth();
+        if (browserWidth - x < 280) {
             modal.style.left = "0";
             modal.style.right = "auto";
+            modal.style.marginLeft = browserWidth - x - 280 + "px";
         } else {
             modal.style.left = "0";
             modal.style.right = "auto";
+            modal.style.marginLeft = "0px";
         }
     }
 
     // desktop: show on hover
     btn.addEventListener("mouseenter", () => {
         if (!isMobile()) {
-            positionModal();
             modal.style.opacity = "1";
             modal.style.visibility = "visible";
         }
@@ -54,8 +57,19 @@ function projectfunc() {
         }
     });
 
-    // re-position on resize
-    window.addEventListener("resize", () => {
-        if (isMobile()) positionModal();
-    });
+    window.addEventListener("resize", positionModal);
+    positionModal();
+}
+function checkBtnLocation() {
+    const btn = document.querySelector(".contributor-button");
+    if (!btn) return;
+
+    const rect = btn.getBoundingClientRect();
+    const x = rect.x;
+    console.log(x);
+    return x;
+}
+
+function getBrowserWidth() {
+    return window.innerWidth;
 }

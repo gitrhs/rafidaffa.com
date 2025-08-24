@@ -53,6 +53,7 @@
                     </span>
                 </span>
             </h1>
+            <br>
             <span>Project of University Malaya Course:
                 WIG3004 - Virtual Reality</span>
             <br />

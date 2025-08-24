@@ -282,9 +282,13 @@
                                 </div>
                                 <div class="project-image-container">
                                     <img src="image/project/calendar.png">
+
                                     <div class="image-overlay">
+                                        <a href="https://github.com/PPI-Malaysia/PPIM-Calendar" target="_blank"
+                                            class="anone badge overlay-btn">Github</a>
                                         <a href="https://calendar.ppimalaysia.id" target="_blank"
                                             class="anone badge overlay-btn">Website</a>
+
                                         <a href="" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>
@@ -325,7 +329,7 @@
                                 <div class="project-image-container">
                                     <img src="image/project/nextword.png">
                                     <div class="image-overlay">
-                                        <a href="" target="_blank" class="anone badge overlay-btn">Github Page</a>
+                                        <a href="" target="_blank" class="anone badge overlay-btn">Github</a>
                                         <a href="" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>
@@ -436,7 +440,7 @@
                                     <img src="image/project/poernamafest.png">
                                     <div class="image-overlay">
                                         <a href="https://poernamafest.rafidaffa.com" target="_blank"
-                                            class="anone badge overlay-btn">Website Demo</a>
+                                            class="anone badge overlay-btn">Website Archive</a>
                                         <a href="poernamafest" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>
@@ -474,7 +478,7 @@
                                     <img src="image/project/poernamastore.png">
                                     <div class="image-overlay">
                                         <a href="https://poernamastore.rafidaffa.com" target="_blank"
-                                            class="anone badge overlay-btn">Website Demo</a>
+                                            class="anone badge overlay-btn">Website Archive</a>
                                         <a href="poernamafeststore" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>

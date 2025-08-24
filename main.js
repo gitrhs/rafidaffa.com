@@ -122,7 +122,16 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         // Extract the filename without extension
         initialPageId = paths.split("/").pop().replace(".php", "");
-        if (["wotp", "avatarai", "sts", "umnotes"].includes(initialPageId)) {
+        if (
+            [
+                "wotp",
+                "avatarai",
+                "sts",
+                "umnotes",
+                "poernamafest",
+                "poernamafeststore",
+            ].includes(initialPageId)
+        ) {
             console.log("this is a project");
             loadScript(`../js/project.js`, () => {
                 fetch(`../content/${initialPageId}.php`)
@@ -180,6 +189,12 @@ function loadContent(data_id) {
             case "umnotes":
                 projectfunc();
                 break;
+            case "poernamafest":
+                projectfunc();
+                break;
+            case "poernamafeststore":
+                projectfunc();
+                break;
             default:
                 console.log("no function");
         }
@@ -232,6 +247,16 @@ function loadContent(data_id) {
                         });
                         break;
                     case "umnotes":
+                        loadScript("../js/project.js?dev=3", () => {
+                            projectfunc();
+                        });
+                        break;
+                    case "poernamafest":
+                        loadScript("../js/project.js?dev=3", () => {
+                            projectfunc();
+                        });
+                        break;
+                    case "poernamafeststore":
                         loadScript("../js/project.js?dev=3", () => {
                             projectfunc();
                         });

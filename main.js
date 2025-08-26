@@ -130,6 +130,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "umnotes",
                 "poernamafest",
                 "poernamafeststore",
+                "senara",
+                "calendar",
             ].includes(initialPageId)
         ) {
             console.log("this is a project");
@@ -195,6 +197,12 @@ function loadContent(data_id) {
             case "poernamafeststore":
                 projectfunc();
                 break;
+            case "senara":
+                projectfunc();
+                break;
+            case "calendar":
+                projectfunc();
+                break;
             default:
                 console.log("no function");
         }
@@ -212,52 +220,62 @@ function loadContent(data_id) {
                 document.getElementById("main-content").innerHTML = data;
                 switch (data_id) {
                     case "home":
-                        loadScript("../js/home.js?dev=3", () => {
+                        loadScript("../js/home.js?dev=3.1", () => {
                             homefunc();
                         });
                         break;
                     case "course":
-                        loadScript("../js/course.js?dev=3", () => {
+                        loadScript("../js/course.js?dev=3.1", () => {
                             coursefunc();
                         });
                         break;
                     case "contact":
-                        loadScript("../js/contact.js?dev=3", () => {
+                        loadScript("../js/contact.js?dev=3.1", () => {
                             contactfunc();
                         });
                         break;
                     case "blog":
-                        loadScript("../js/blog.js?dev=3", () => {
+                        loadScript("../js/blog.js?dev=3.1", () => {
                             blogfunc();
                         });
                         break;
                     case "wotp":
-                        loadScript("../js/project.js?dev=3", () => {
+                        loadScript("../js/project.js?dev=3.1", () => {
                             projectfunc();
                         });
                         break;
                     case "avatarai":
-                        loadScript("../js/project.js?dev=3", () => {
+                        loadScript("../js/project.js?dev=3.1", () => {
                             projectfunc();
                         });
                         break;
                     case "sts":
-                        loadScript("../js/project.js?dev=3", () => {
+                        loadScript("../js/project.js?dev=3.1", () => {
                             projectfunc();
                         });
                         break;
                     case "umnotes":
-                        loadScript("../js/project.js?dev=3", () => {
+                        loadScript("../js/project.js?dev=3.1", () => {
                             projectfunc();
                         });
                         break;
                     case "poernamafest":
-                        loadScript("../js/project.js?dev=3", () => {
+                        loadScript("../js/project.js?dev=3.1", () => {
                             projectfunc();
                         });
                         break;
                     case "poernamafeststore":
-                        loadScript("../js/project.js?dev=3", () => {
+                        loadScript("../js/project.js?dev=3.1", () => {
+                            projectfunc();
+                        });
+                        break;
+                    case "senara":
+                        loadScript("../js/project.js?dev=3.1", () => {
+                            projectfunc();
+                        });
+                        break;
+                    case "calendar":
+                        loadScript("../js/project.js?dev=3.1", () => {
                             projectfunc();
                         });
                         break;

@@ -249,7 +249,7 @@
                                     <div class="image-overlay">
                                         <a href="https://senara.ppimalaysia.id/" target="_blank"
                                             class="anone badge overlay-btn">Website</a>
-                                        <a href="" class="anone badge overlay-btn">Project Details</a>
+                                        <a href="senara" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +289,7 @@
                                         <a href="https://calendar.ppimalaysia.id" target="_blank"
                                             class="anone badge overlay-btn">Website</a>
 
-                                        <a href="" class="anone badge overlay-btn">Project Details</a>
+                                        <a href="calendar" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>
                             </div>

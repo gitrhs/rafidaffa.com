@@ -39,7 +39,7 @@
             <span class="menu-icon">
                 <resume-icon class="menu-icon-data"></resume-icon>
             </span>
-            <span>Resume</span>
+            <span>Resume / CV</span>
         </button>
         <button id="menu" data-id="course" type="button"
             class="btn btn-main btn-max d-flex align-items-center <?php if ($page == "course") {echo "active"; } ?>"

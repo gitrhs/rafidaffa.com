@@ -132,6 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "poernamafeststore",
                 "senara",
                 "calendar",
+                "nextword",
             ].includes(initialPageId)
         ) {
             console.log("this is a project");
@@ -201,6 +202,9 @@ function loadContent(data_id) {
                 projectfunc();
                 break;
             case "calendar":
+                projectfunc();
+                break;
+            case "nextword":
                 projectfunc();
                 break;
             default:
@@ -275,6 +279,11 @@ function loadContent(data_id) {
                         });
                         break;
                     case "calendar":
+                        loadScript("../js/project.js?dev=3.1", () => {
+                            projectfunc();
+                        });
+                        break;
+                    case "nextword":
                         loadScript("../js/project.js?dev=3.1", () => {
                             projectfunc();
                         });

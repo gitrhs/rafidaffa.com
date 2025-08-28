@@ -330,7 +330,7 @@
                                     <img src="image/project/nextword.png">
                                     <div class="image-overlay">
                                         <a href="" target="_blank" class="anone badge overlay-btn">Github</a>
-                                        <a href="" class="anone badge overlay-btn">Project Details</a>
+                                        <a href="nextword" class="anone badge overlay-btn">Project Details</a>
                                     </div>
                                 </div>
                             </div>

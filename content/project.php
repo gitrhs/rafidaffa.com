@@ -40,8 +40,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Secure dashboard to manage student records, classes, attendance, and reports
+                                        with role-based access and fast search.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-green">php</span>
@@ -79,8 +79,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Drag-and-drop form builder with custom fields, validation, and shareable
+                                        links—submissions tracked in a simple dashboard.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-green">php</span>
@@ -123,8 +123,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Real-time video conversations in Bahasa Indonesia using STT, RAG, TTS, and a
+                                        lifelike avatar with synced lip movement.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-green">Python</span>
@@ -160,8 +160,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        End-to-end speech-to-speech assistant that listens, retrieves answers, and
+                                        replies naturally—no screen required.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-green">Python</span>
@@ -197,8 +197,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Short VR exploration game built in one week—immersive world, dynamic lighting,
+                                        and environmental storytelling.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-blue">Unity 6</span>
@@ -235,8 +235,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Festival website for submissions, ticketing, schedules, and sponsors—built to
+                                        showcase artists and streamline operations.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-blue">HTML</span>
@@ -271,8 +271,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Responsive event calendar with infinite scroll, category filters, and live
+                                        “happening now” highlights PPI Malaysia's event.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-blue">HTML</span>
@@ -315,8 +315,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Lightweight next-word predictor trained on Reuters that serves top‑k suggestions
+                                        to keep typing flow uninterrupted.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-green">Python</span>
@@ -352,8 +352,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Prototype for dynamic pricing using demand forecasting and optimization to
+                                        improve seat utilization and revenue.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-green">Python</span>
@@ -387,8 +387,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        UM Student resource hub for notes and past papers with email-gated access,
+                                        contributor verification, and a rewards system.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-green">php</span>
@@ -426,8 +426,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Official festival site with schedules, performers, ticketing, and
+                                        brand‑consistent design to boost engagement and sales.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-green">php</span>
@@ -465,8 +465,8 @@
                                 <div class="project-details">
                                     <div class="hr0-10"></div>
                                     <p class="project-details-short-desc">
-                                        Interactive art exhibition platform with artist portfolios and event
-                                        management.
+                                        Merchandise storefront replacing Google Forms—clean catalog, simple checkout,
+                                        and stronger brand visibility.
                                     </p>
                                     <div class="tech-stack">
                                         <span class="badge blog-badge badge-blue">HTML</span>

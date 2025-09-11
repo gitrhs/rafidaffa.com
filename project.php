@@ -16,7 +16,7 @@
 <body>
     <div class="row" style="position: relative">
         <?php
-        $page = "course";
+        $page = "project";
         include('sidebar.php');
         ?>
         <div class="col">

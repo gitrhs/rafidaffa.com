@@ -9,11 +9,11 @@
 <div class="d-flex justify-content-center">
     <div class="content">
         <div class="d-flex justify-content-between align-items-center" style="margin-bottom: -10px;">
-            <small>Last updated: 27/08/2025</small>
+            <small>Last updated: 14/10/2025</small>
             <div class="d-flex justify-content-end align-items-center">
                 <div class="">
                     <a type="button"
-                        href="https://drive.google.com/file/d/1YVtj5eQeeR1QcBo-JxreYkqkY7n6DLr-/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1zL1M9CSSc4a5E8QOEdOSvHcP3J7Nkudk/view?usp=sharing"
                         target="_blank" class="btn btn-main btn-max d-flex align-items-center button-border m0">
                         <span class="menu-icon">
                             <download-icon class="menu-icon-data icon20"></download-icon>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="" style="margin-left: 10px">
                     <a type="button"
-                        href="https://drive.google.com/file/d/1NK_99qUhO1v-TcCsaZX2HnK6JFa4gzEJ/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1ZivBvJ-qLTANAtol2BzOJcCyYSaO6grn/view?usp=sharing"
                         target="_blank" class="btn btn-main btn-max d-flex align-items-center button-border m0">
                         <span class="menu-icon">
                             <download-icon class="menu-icon-data icon20"></download-icon>
@@ -49,7 +49,7 @@
             <h4>Profile</h4>
             <p>AI engineer and Computer Science (Artificial Intelligence) student at Universiti Malaya. Experienced in
                 machine learning, natural language systems, and full-stack development. Skilled in designing AI
-                pipelines, building web applications, and managing technical projects.</p>
+                pipelines, building web, applications, and managing technical projects.</p>
             <hr>
             <h4>Education</h4>
             <p>
@@ -122,6 +122,9 @@
                 using Random Forest.</p>
             <p><b>Next Word Autocomplete (Course Project, 2025)</b> — Next-word prediction model using Bidirectional
                 LSTM.</p>
+            <p><b>InJourney Panel (Injourney, 2025)</b> — Dashboard system for InJourney an Indonesian state-owned
+                enterprise (BUMN), to manage internal and external events, integrated with an AI-powered risk management
+                module using LLMs.</p>
             <p><b>Senarafest (PPI Malaysia Project, 2025)</b> — Cultural art festival website with submissions,
                 ticketing, and
                 sponsorship.</p>
@@ -145,7 +148,7 @@
                 Material
                 UI;
                 Gradio; jQuery; GSAP
-                <br><b>Back End:</b> Python (Flask, Django); PHP; Java (Spring); Prolog
+                <br><b>Back End:</b> Python (Flask, Django); PHP (Laravel, Native); Java (Spring); Prolog
                 <br><b>Databases:</b> MySQL; SQLite; Qdrant
                 <br><b>Tools & Software:</b> Ubuntu/Linux; Git; Postman; Figma; Unity 6; Blender
             </p>

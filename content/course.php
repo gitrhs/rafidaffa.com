@@ -12,10 +12,6 @@
             <taken-icon class="menu-icon-data"></taken-icon>&nbsp;Course & Certificate
         </div>
         <span class="text-silent subtitle">Here are some courses and certificates that I have taken</span>
-        <div class="warning-notes d-flex align-items-center">
-            <span><i>Note:</i><br>This page is still under development. Some courses and certificates may not be
-                displayed.</span>
-        </div>
         <br>
         <div class="horizontal">
             <a class="menu-item course-item active" id="allcourse">
@@ -59,7 +55,9 @@
                 </div>
                 <br>
                 <div>
-                    <div id="course-container" class="row"></div>
+                    <div id="course-container" class="row">
+
+                    </div>
                 </div>
             </div>
             <div id="uni-content">

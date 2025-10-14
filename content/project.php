@@ -300,6 +300,41 @@
                             <div>
                                 <div class="project-header d-flex align-items-end justify-content-between">
                                     <div class="project-title">
+                                        InJourney Panel</div>
+                                    <div class="contributor d-flex">
+                                        <img src="image/profile/rafi2.jpg" loading="lazy" class="contributor-img">
+                                    </div>
+                                </div>
+                                <div class="text-silent project-desc">
+                                    Dashboard Panel Website
+                                </div>
+                                <div class="project-details">
+                                    <div class="hr0-10"></div>
+                                    <p class="project-details-short-desc">
+                                        A dashboard panel for InJourney (BUMN) for their internal and external event.
+                                    </p>
+                                    <div class="tech-stack">
+                                        <span class="badge blog-badge badge-blue">HTML</span>
+                                        <span class="badge blog-badge badge-blue">CSS3</span>
+                                        <span class="badge blog-badge badge-green">Javascript</span>
+                                        <span class="badge blog-badge badge-blue">PHP</span>
+                                    </div>
+                                </div>
+                                <div class="project-image-container">
+                                    <img src="image/project/injourney.png">
+
+                                    <div class="image-overlay">
+                                        <a href="" class="anone badge overlay-btn">Project Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-4" style="margin-bottom: 25px;">
+                        <div class="project-card d-flex align-items-center">
+                            <div>
+                                <div class="project-header d-flex align-items-end justify-content-between">
+                                    <div class="project-title">
                                         Word Autocomplete</div>
                                     <div class="contributor d-flex">
                                         <img src="image/profile/ezekiel.jpg" loading="lazy" class="contributor-img"

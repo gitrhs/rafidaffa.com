@@ -43,17 +43,35 @@ function coursefunc() {
         return issuerImages[issuer] || "icon/default.png"; // Fallback image
     }
 
+    function putTags(tags) {
+        const split = tags.split(", ");
+        let output = "";
+        split.forEach((item) => {
+            output += `<span class="badge course-badge badge-neutral">${item}</span>`;
+        });
+        return output;
+    }
     // Function to render a single course card
     function renderCourseCard(course) {
         return `
-            <div class="col-6 col-lg-4">
-                <div class="course-card d-flex align-items-center">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="course-card d-flex align-content-between flex-wrap">
+                    <div class="d-flex flex-wrap gap-2 align-items-center w100">
+                        <img src="icon/${course.issuer}.png" alt="${
+            course.issuer
+        }"
+                            class="course-image" />
+                    </div>
                     <div>
-                        <div class="d-flex flex-wrap gap-2 align-items-center">
-                            <img src="icon/${course.issuer}.png" alt="${course.issuer}" class="course-image" />
-                            <span class="course-source">${course.issuer} (${course.subtitle})</span><br>
+                        <div class="course-source">${
+                            course.issuer
+                        } <span class="course-date">${
+            course.subtitle
+        }</span></div>
+                        <div class="course-title">${course.title}</div>
+                        <div class="tech-stack">
+                            ${putTags(course.tags)}
                         </div>
-                        <span class="course-title">${course.title}</span>
                     </div>
                 </div>
             </div>

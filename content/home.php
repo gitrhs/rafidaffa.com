@@ -12,52 +12,57 @@
             <div class="blob"></div>
         </div>
         <p class="about-section">
-            Hi there! <img src="icon/rafi-ico2.png" width="25px" height="25px" style="margin-bottom: 2px;" alt="👋"> I'm
-            Rafi Daffa Ramadhani, and <span class="marksalmon">I love
-                building things for the web and playing around with
-                AI</span>. My coding journey started back in middle school
-            when I first discovered web development—and I've
-            been hooked ever since!
+            <span class="opening-about-section">
+                Hi there! I'm Rafi <img src="icon/rafi-ico2.png" width="25" height="25" style="margin-bottom:2px;"
+                    alt="👋">
+            </span><br>
+            I'm a <span class="mark-salmon">Computer Science (AI) student who loves building things for the web, app,
+                and exploring
+                AI</span>.
+            My coding journey started back in middle school when I first discovered web development, and I’ve been
+            hooked ever since!
         </p>
+
         <p class="about-section">
-            I'm currently on my <span class="markyellow">Bachelor's in Computer
-                Science (Artificial Intelligence)</span> at <span class="highlightv1">University of
-                Malaya.</span> Recently,
-            I had an amazing chance to study at KAIST as an exchange student in South
-            Korea (thanks to the GKS Scholarship!), where I focused extensively into deep learning and
-            computer vision.
+            I’m pursuing my
+            <span class="markblue">Bachelor’s in Computer Science (Artificial Intelligence)</span>
+            at <span class="markgreen">University of Malaya</span>.
+            Besides that, I’m also active in student organizations — serving as the Deputy Head of the Data Center and
+            Digitalization Directorate at
+            <span class="marksalmon">PPI Dunia</span>, where I co-lead two divisions:
+            Data Analysis & Digital Governance, and Technology Development & Infrastructure —
+            focusing on digital systems, data management, and platform integration across the global Indonesian student
+            network.
+            I also lead the Data and Information System Bureau at
+            <span class="marksalmon">PPI Malaysia</span>, managing a 12-person team that builds and maintains digital
+            platforms for Indonesian students in Malaysia.
         </p>
+
         <p class="about-section">
-            As a developer, I enjoy working with various
-            technologies! I build websites using HTML,
-            JavaScript, CSS, and PHP, develop mobile
-            applications using Android Studio and React Native,
-            and explore AI projects with Python. Currently, I'm
-            leading the development of an enterprise system at
-            an international trade company as the <span
-                class="sketch-highlight">Head&nbsp;of&nbsp;IT&nbsp;Department.</span>
+            I love building digital solutions that connect technology with real-world impact.
+            I build websites using React, Laravel, Native (HTML, CSS, JavaScript, and PHP), develop mobile apps with
+            Android
+            Studio and React
+            Native,
+            and explore AI projects using Python.
         </p>
+        <!--
         <p class="about-section">
-            Here's what I'm working on right now:
-        <ul>
-            <li>Building a
-                comprehensive trading platform that handles
-                everything from contact management to financial
-                operations</li>
-            <li>Developing AI-powered features to
-                enhance business analytics and automate processes</li>
-            <li>Creating an integrated document management system
-                for international trade</li>
+            Here’s what I’m working on right now:
+        </p>
+        <ul class="about-list">
+            <li>Developing a full-scale enterprise system for operations, finance, and client management</li>
+            <li>Building AI-driven features to automate analytics and decision-making</li>
+            <li>Designing integrated document and workflow systems for international trade</li>
         </ul>
-        </p>
+-->
         <p class="about-section">
-            Something cool about me? I'm actually pretty
-            <span class="sketch-highlightv2 salmonborder">extroverted</span> for a developer! I love public
-            speaking
-            and explaining complex tech stuff in ways that make
-            sense to everyone. Want to chat about tech,
-            collaborate on something cool, or just say hi? Let's
-            build something awesome together! <img src="icon/rafi-ico.png" width="25px" height="25px" alt="&#128513;">
+            Outside of coding, I enjoy sharing knowledge and explaining tech in simple, relatable
+            ways.
+            I’m also that rare extroverted developer who loves a good stage and a good challenge!
+            Want to chat about tech, collaborate on something cool, or just say hi?
+            Let’s build something awesome together!
+            <img src="icon/rafi-ico.png" width="25" height="25" alt="😄">
         </p>
         <div class="row">
             <div class="col-6 col-sm-5 col-lg-4 col-xl-3">
@@ -172,6 +177,41 @@
             <p class="text-silent">Experience</p>
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="d-flex flex-wrap gap-2">
+                    <img src="icon/ppid.png" alt="PPI Dunia" class="education-image" />
+                    <div>
+                        <p><b>Deputy Head of Data Center and Digitalization</b></p>
+                        <a class="d-flex align-items-center gap-1 textlink" href="https://ppi.id" target="_blank">PPI
+                            Dunia (World Indonesian Students Association)<arrow-icon class="togo-icon"
+                                style="margin-top: -1px;"></arrow-icon></a>
+                    </div>
+                </div>
+                <p class="text-silent">November 2025 - Present</p>
+            </div>
+            Co-leading the Directorate of Data Center and Digitalization. <span class="marksalmon">Managing two
+                divisions</span>—Data Analysis and
+            Digital Governance, and Technology Development and Infrastructure—to handle digital systems, data
+            management, and platform integration across PPI Dunia.
+        </div>
+        <div class="about-section">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap gap-2">
+                    <img src="icon/ppim.png" alt="PPI Dunia" class="education-image" />
+                    <div>
+                        <p><b>Head of Data and Information System Bureau</b></p>
+                        <a class="d-flex align-items-center gap-1 textlink" href="https://ppimalaysia.id"
+                            target="_blank">PPI
+                            Malaysia (Indonesian Students Association)<arrow-icon class="togo-icon"
+                                style="margin-top: -1px;"></arrow-icon></a>
+                    </div>
+                </div>
+                <p class="text-silent">Mar 2025 - Present</p>
+            </div>
+            <span class="marksalmon">Leading a team of 12</span> to develop and manage digital platforms for Indonesian
+            students in Malaysia.
+        </div>
+        <div class="about-section">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap gap-2">
                     <img src="icon/klg.jpg" alt="kaist" class="education-image" />
                     <div>
                         <p><b>Head of IT Department</b></p>
@@ -187,7 +227,6 @@
             tracking, and multi-currency financial systems.
         </div>
         <div class="about-section">
-            <p class="text-silent">Experience</p>
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="d-flex flex-wrap gap-2">
                     <img src="icon/xq.png" alt="kaist" class="education-image" />
@@ -225,8 +264,8 @@
                     <div>
                         <p><b>intellectual Division</b></p>
                         <a class="d-flex align-items-center gap-1 textlink" href="https://ppiunimalaya.id"
-                            target="_blank">PPI University Malaya<arrow-icon class="togo-icon"
-                                style="margin-top: -1px;"></arrow-icon></a>
+                            target="_blank">PPI University Malaya (Indonesian Students Association)<arrow-icon
+                                class="togo-icon" style="margin-top: -1px;"></arrow-icon></a>
                     </div>
                 </div>
                 <p class="text-silent">Mar 2022 - Dec 2023</p>

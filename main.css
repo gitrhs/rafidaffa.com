@@ -405,6 +405,9 @@ body {
     color: #374151;
     text-align: justify;
 }
+.opening-about-section {
+    font-weight: bold;
+}
 .title-section {
     padding: 10px;
 }

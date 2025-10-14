@@ -13,6 +13,7 @@
         </div>
         <span class="text-silent subtitle">Here are some courses and certificates that I have taken</span>
         <br>
+        <br>
         <div class="horizontal">
             <a class="menu-item course-item active" id="allcourse">
                 <span>All</span>
@@ -27,8 +28,10 @@
                 <span>Award and Cert</span>
             </a>
         </div>
+        <br>
         <div class="menu-item-contentv2">
             <div id="allcourse-content">
+                <!--
                 <br>
                 <div class="horizontalv2">
                     <button type="button" class="btn btn-badge badge-secondary d-flex align-items-center">
@@ -53,6 +56,7 @@
                         <span>Language Course</span>
                     </button>
                 </div>
+-->
                 <br>
                 <div>
                     <div id="course-container" class="row">

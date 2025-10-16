@@ -224,67 +224,67 @@ function loadContent(data_id) {
                 document.getElementById("main-content").innerHTML = data;
                 switch (data_id) {
                     case "home":
-                        loadScript("../js/home.js?dev=3.3.4", () => {
+                        loadScript("../js/home.js?dev=3.4", () => {
                             homefunc();
                         });
                         break;
                     case "course":
-                        loadScript("../js/course.js?dev=3.3.4", () => {
+                        loadScript("../js/course.js?dev=3.4", () => {
                             coursefunc();
                         });
                         break;
                     case "contact":
-                        loadScript("../js/contact.js?dev=3.3.4", () => {
+                        loadScript("../js/contact.js?dev=3.4", () => {
                             contactfunc();
                         });
                         break;
                     case "blog":
-                        loadScript("../js/blog.js?dev=3.3.4", () => {
+                        loadScript("../js/blog.js?dev=3.4", () => {
                             blogfunc();
                         });
                         break;
                     case "wotp":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;
                     case "avatarai":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;
                     case "sts":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;
                     case "umnotes":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;
                     case "poernamafest":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;
                     case "poernamafeststore":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;
                     case "senara":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;
                     case "calendar":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;
                     case "nextword":
-                        loadScript("../js/project.js?dev=3.3.4", () => {
+                        loadScript("../js/project.js?dev=3.4", () => {
                             projectfunc();
                         });
                         break;

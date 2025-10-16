@@ -51,23 +51,27 @@ function coursefunc() {
         });
         return output;
     }
+
+    function putStatus(status) {
+        if (status == "Ongoing") {
+            return `<span class="badge course-date badge-green">${status}</span>`;
+        }
+        return `<span class="badge course-date badge-neutral">${status}</span>`;
+    }
     // Function to render a single course card
     function renderCourseCard(course) {
         return `
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="course-card d-flex align-content-between flex-wrap">
-                    <div class="d-flex flex-wrap gap-2 align-items-center w100">
+                    <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between w100">
                         <img src="icon/${course.issuer}.png" alt="${
             course.issuer
         }"
                             class="course-image" />
+                        ${putStatus(course.subtitle)}
                     </div>
                     <div>
-                        <div class="course-source">${
-                            course.issuer
-                        } <span class="course-date">${
-            course.subtitle
-        }</span></div>
+                        <div class="course-source">${course.issuer}</div>
                         <div class="course-title">${course.title}</div>
                         <div class="tech-stack">
                             ${putTags(course.tags)}

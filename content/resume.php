@@ -75,7 +75,9 @@
                 <span>Deputy Director of Data Center and Digitalization</span><br>
                 <span>Nov 2025 – Present</span>
             <ul style="margin-top: -12px;">
-                <li>Co-leading the Directorate of Data Center and Digitalization, Managing three divisions.</li>
+                <li>Co-leading the Directorate of Data Center and Digitalization, Managing three divisions to handle
+                    digital systems, data
+                    management, and platform integration across PPI Dunia.</li>
             </ul>
             </p>
             <p>

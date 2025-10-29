@@ -187,9 +187,8 @@
                 </div>
                 <p class="text-silent">November 2025 - Present</p>
             </div>
-            Co-leading the Directorate of Data Center and Digitalization. <span class="marksalmon">Managing two
-                divisions</span>—Data Analysis and
-            Digital Governance, and Technology Development and Infrastructure—to handle digital systems, data
+            Co-leading the Directorate of Data Center and Digitalization. <span class="marksalmon">Managing three
+                divisions</span> to handle digital systems, data
             management, and platform integration across PPI Dunia.
         </div>
         <div class="about-section">

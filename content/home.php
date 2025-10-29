@@ -181,7 +181,7 @@
                     <div>
                         <p><b>Deputy Head of Data Center and Digitalization</b></p>
                         <a class="d-flex align-items-center gap-1 textlink" href="https://ppi.id" target="_blank">PPI
-                            Dunia (World Indonesian Students Association)<arrow-icon class="togo-icon"
+                            Dunia (Overseas Indonesian Students'​ Association Alliance)<arrow-icon class="togo-icon"
                                 style="margin-top: -1px;"></arrow-icon></a>
                     </div>
                 </div>

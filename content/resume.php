@@ -71,6 +71,14 @@
             <hr>
             <h4>Experience</h4>
             <p>
+                <span><b>PPI Dunia (OISAA)</b></span><br>
+                <span>Deputy Director of Data Center and Digitalization</span><br>
+                <span>Nov 2025 – Present</span>
+            <ul style="margin-top: -12px;">
+                <li>Co-leading the Directorate of Data Center and Digitalization, Managing three divisions.</li>
+            </ul>
+            </p>
+            <p>
                 <span><b>PPI Malaysia</b></span><br>
                 <span>Head of Data and Information Systems Bureau</span><br>
                 <span>Mar 2025 – Present</span>

@@ -155,10 +155,9 @@
                 Scikit-learn;
                 NLTK; OpenCV
                 <br><b>Front End:</b> HTML5; CSS3; JavaScript; React; React Native; Bootstrap; Tailwind CSS;
-                Material
-                UI;
-                Gradio; jQuery; GSAP
-                <br><b>Back End:</b> Python (Flask, Django); PHP (Laravel, Native); Java (Spring); Prolog
+                Material UI; Wordpress; Gradio; jQuery; GSAP
+                <br><b>Back End:</b> Python (Flask, Django); PHP (Laravel, Native); Java (Spring); Prolog; JavaScript
+                (Node.js)
                 <br><b>Databases:</b> MySQL; SQLite; Qdrant
                 <br><b>Tools & Software:</b> Ubuntu/Linux; Git; Postman; Figma; Unity 6; Blender
             </p>

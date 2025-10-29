@@ -179,7 +179,7 @@
                 <div class="d-flex flex-wrap gap-2">
                     <img src="icon/ppid.png" alt="PPI Dunia" class="education-image" />
                     <div>
-                        <p><b>Deputy Head of Data Center and Digitalization</b></p>
+                        <p><b>Deputy Director of Data Center and Digitalization</b></p>
                         <a class="d-flex align-items-center gap-1 textlink" href="https://ppi.id" target="_blank">PPI
                             Dunia (Overseas Indonesian Students'​ Association Alliance)<arrow-icon class="togo-icon"
                                 style="margin-top: -1px;"></arrow-icon></a>

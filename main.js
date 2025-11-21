@@ -295,3 +295,21 @@ function loadContent(data_id) {
             });
     }
 }
+
+// Chatbot modal iframe handler
+let chatbotIframeLoaded = false;
+
+document.addEventListener("DOMContentLoaded", function () {
+    const chatbotModal = document.getElementById("sts-chatbot-modal");
+
+    if (chatbotModal) {
+        chatbotModal.addEventListener("show.bs.modal", function () {
+            if (!chatbotIframeLoaded) {
+                const chatbotContainer = document.getElementById("sts-chatbot");
+                chatbotContainer.innerHTML =
+                    '<iframe src="https://tattle.2ai.dev/frame.php?hash=498cd6365f2b0a063c5713529488fdcca580ebcfc584ed0e7d42abdefaaf629d" style="width: 100%; height: 100%; border: none; border-radius: 20px;" allow="microphone; autoplay; clipboard-write"></iframe>';
+                chatbotIframeLoaded = true;
+            }
+        });
+    }
+});

@@ -1,3 +1,21 @@
+<div class="sts-overlay">
+    <div class="sts-container">
+        <div class="button-wrap" data-bs-toggle="modal" data-bs-target="#sts-chatbot-modal">
+            <button class="glass-btn" id="generateBtn">
+                <img src="image/sts-icon.gif" alt="STS" class="glass-btn-icon">
+            </button>
+            <div class="button-shadow"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="sts-chatbot-modal" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="sts-chatbot-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content sts-modal-content">
+            <div id="sts-chatbot"></div>
+        </div>
+    </div>
+</div>
 <div class="side-navbar col-nav p-2" id="sidenavbar">
     <div class="d-flex">
         <div class="burger-icon" style="padding-left: 15px">

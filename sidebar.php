@@ -1,4 +1,4 @@
-<div class="sts-overlay d-none d-lg-block">
+<div class="sts-overlay">
     <div class="sts-container">
         <div class="button-wrap" data-bs-toggle="modal" data-bs-target="#sts-chatbot-modal">
             <button class="glass-btn" id="generateBtn">

@@ -25,7 +25,7 @@
                 -->
                 <div class="" style="margin-left: 10px">
                     <a type="button"
-                        href="https://drive.google.com/file/d/19fBygBVbaWPZws3H6eLoIKtJDS8B0xvi/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1wAZH9OJYt-_kLb9gGWxkqpILXNZ0d1ur/view?usp=sharing"
                         target="_blank" class="btn btn-main btn-max d-flex align-items-center button-border m0">
                         <span class="menu-icon">
                             <download-icon class="menu-icon-data icon20"></download-icon>

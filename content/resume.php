@@ -41,7 +41,7 @@
             <div class="d-flex">
                 hello@rafidaffa.com
                 &nbsp;|&nbsp;
-                +62 812-3456-7890
+                +62 878-2010-2004
                 &nbsp;|&nbsp;
                 rafidaffa.com
                 &nbsp;|&nbsp;

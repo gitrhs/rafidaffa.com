@@ -1,4 +1,4 @@
-<div class="sticky-top d-flex align-items-center d-none d-lg-block">
+<div class="sticky-top d-flex align-items-center">
     <div class="burger-icon">
         <button type="button" class="btn btn-main d-flex justify-content-between align-items-center"
             onclick="burgerToogle()">

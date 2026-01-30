@@ -602,6 +602,91 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 }
+.glitch-tiktok {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-shadow: 0.04em 0 0 #25f4ee, -0.04em 0 0 #fe2c55;
+    animation: glitch-tiktok 0.5s infinite;
+}
+.glitch-tiktok::before,
+.glitch-tiktok::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    color: inherit;
+    pointer-events: none;
+}
+.glitch-tiktok::before {
+    color: #25f4ee;
+    transform: translate(0.04em, -0.02em);
+    animation: glitch-tiktok-1 0.5s infinite;
+}
+.glitch-tiktok::after {
+    color: #fe2c55;
+    transform: translate(-0.04em, 0.02em);
+    animation: glitch-tiktok-2 0.5s infinite;
+}
+@keyframes glitch-tiktok {
+    0%,
+    80% {
+        transform: none;
+        opacity: 1;
+    }
+    85% {
+        transform: skew(-1.2deg, -0.4deg);
+        opacity: 0.85;
+    }
+    90% {
+        transform: skew(1.1deg, 0.3deg);
+        opacity: 0.85;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes glitch-tiktok-1 {
+    0%,
+    80% {
+        transform: translate(0.04em, -0.02em);
+        opacity: 0.35;
+    }
+    85% {
+        transform: translate(-0.05em, 0.01em);
+        opacity: 0.6;
+    }
+    90% {
+        transform: translate(0.05em, -0.03em);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(0.04em, -0.02em);
+        opacity: 0.35;
+    }
+}
+@keyframes glitch-tiktok-2 {
+    0%,
+    80% {
+        transform: translate(-0.04em, 0.02em);
+        opacity: 0.35;
+    }
+    85% {
+        transform: translate(0.05em, -0.01em);
+        opacity: 0.6;
+    }
+    90% {
+        transform: translate(-0.05em, 0.03em);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(-0.04em, 0.02em);
+        opacity: 0.35;
+    }
+}
 .markgreen {
     margin: 0 -0.4em;
     padding: 0.1em 0.4em;

@@ -116,9 +116,9 @@
             <p>
                 <span><b>PPI Malaysia</b></span><br>
                 <span>Head of Data and Information Systems Bureau</span><br>
-                <span>Mar 2025 – Present</span>
+                <span>Mar 2025 – Dec 2025</span>
             <ul style="margin-top: -12px;">
-                <li>Oversee IT initiatives and digital transformation for the Indonesian student association in
+                <li>Oversaw IT initiatives and digital transformation for the Indonesian student association in
                     Malaysia.</li>
             </ul>
             </p>

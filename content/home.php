@@ -27,14 +27,16 @@
             I’m pursuing my
             <span class="markblue">Bachelor’s in Computer Science (Artificial Intelligence)</span>
             at <span class="markgreen">University of Malaya</span>.
-            Besides that, I’m also active in student organizations — serving as the Deputy Head of the Data Center and
+            Besides that, I’m a Data Support Intern at
+            <span class="glitch-tiktok" data-text="TikTok">TikTok</span> and active in student organizations — serving
+            as the Deputy Head of the Data Center and
             Digitalization Directorate at
             <span class="marksalmon">PPI Dunia</span>, where I co-lead two divisions:
             Data Analysis & Digital Governance, and Technology Development & Infrastructure —
             focusing on digital systems, data management, and platform integration across the global Indonesian student
             network.
-            I also lead the Data and Information System Bureau at
-            <span class="marksalmon">PPI Malaysia</span>, managing a 12-person team that builds and maintains digital
+            Previously, I led the Data and Information System Bureau at
+            <span class="marksalmon">PPI Malaysia</span>, managing a 12-person team that built and maintained digital
             platforms for Indonesian students in Malaysia.
         </p>
 
@@ -178,7 +180,7 @@
             <p class="text-silent">Experience</p>
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="d-flex flex-wrap gap-2">
-                    <img src="icon/tiktok.png" alt="tiktok" class="education-image" />
+                    <img src="icon/tiktok-icon.png" alt="tiktok" class="education-image" />
                     <div>
                         <p><b>Data Support Intern (GBS CST)</b></p>
                         <a class="d-flex align-items-center gap-1 textlink" href="https://tiktok.com"
@@ -201,10 +203,10 @@
                             Global<arrow-icon class="togo-icon" style="margin-top: -1px;"></arrow-icon></a>
                     </div>
                 </div>
-                <p class="text-silent">Aug 2024 - November 2025</p>
+                <p class="text-silent">Aug 2024 - Nov 2025</p>
             </div>
             <span class="markblue">Co-founder</span> and lead developer of katalislintasglobal.com.
-            Developing enterprise-level trading platform with integrated contact management, project
+            Developed an enterprise-level trading platform with integrated contact management, project
             tracking, and multi-currency financial systems.
         </div>
         <div class="about-section">
@@ -271,7 +273,7 @@
                 </div>
                 <p class="text-silent m0">Mar 2025 - Dec 2025</p>
             </div>
-            <span class="marksalmon">Leading a team of 12</span> to develop and manage digital platforms for Indonesian
+            <span class="marksalmon">Led a team of 12</span> to develop and manage digital platforms for Indonesian
             students in Malaysia.
         </div>
         <div class="about-section">

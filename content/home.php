@@ -173,45 +173,27 @@
             Exchange semester at School of Computing, <span class="markyellow">awarded GKS
                 Scholarship</span>. Completed advanced courses in Deep Learning and Computer Vision.
         </div><br>
+        
         <div class="about-section">
             <p class="text-silent">Experience</p>
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="d-flex flex-wrap gap-2">
-                    <img src="icon/ppid.png" alt="PPI Dunia" class="education-image" />
+                    <img src="icon/tiktok.png" alt="tiktok" class="education-image" />
                     <div>
-                        <p><b>Deputy Director of Data Center and Digitalization</b></p>
-                        <a class="d-flex align-items-center gap-1 textlink" href="https://ppi.id" target="_blank">PPI
-                            Dunia (Overseas Indonesian Students'​ Association Alliance)<arrow-icon class="togo-icon"
-                                style="margin-top: -1px;"></arrow-icon></a>
+                        <p><b>Data Support Intern (GBS CST)</b></p>
+                        <a class="d-flex align-items-center gap-1 textlink" href="https://tiktok.com"
+                            target="_blank">TikTok<arrow-icon class="togo-icon" style="margin-top: -1px;"></arrow-icon></a>
                     </div>
                 </div>
-                <p class="text-silent">November 2025 - Present</p>
+                <p class="text-silent">Jan 2026 - Present</p>
             </div>
-            Co-leading the Directorate of Data Center and Digitalization. <span class="marksalmon">Managing three
-                divisions</span> to handle digital systems, data
-            management, and platform integration across PPI Dunia.
+            Handled data collection, cleaning, and reporting, delivering ad-hoc analysis and dashboards that surfaced
+            KPIs and cross-market insights for stakeholders.
         </div>
         <div class="about-section">
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="d-flex flex-wrap gap-2">
-                    <img src="icon/ppim.png" alt="PPI Dunia" class="education-image" />
-                    <div>
-                        <p><b>Head of Data and Information System Bureau</b></p>
-                        <a class="d-flex align-items-center gap-1 textlink" href="https://ppimalaysia.id"
-                            target="_blank">PPI
-                            Malaysia (Indonesian Students Association)<arrow-icon class="togo-icon"
-                                style="margin-top: -1px;"></arrow-icon></a>
-                    </div>
-                </div>
-                <p class="text-silent">Mar 2025 - Present</p>
-            </div>
-            <span class="marksalmon">Leading a team of 12</span> to develop and manage digital platforms for Indonesian
-            students in Malaysia.
-        </div>
-        <div class="about-section">
-            <div class="d-flex flex-wrap justify-content-between">
-                <div class="d-flex flex-wrap gap-2">
-                    <img src="icon/klg.jpg" alt="kaist" class="education-image" />
+                    <img src="icon/klg.jpg" alt="klg" class="education-image" />
                     <div>
                         <p><b>Head of IT Department</b></p>
                         <a class="d-flex align-items-center gap-1 textlink" href="https://www.katalislintasglobal.com"
@@ -219,7 +201,7 @@
                             Global<arrow-icon class="togo-icon" style="margin-top: -1px;"></arrow-icon></a>
                     </div>
                 </div>
-                <p class="text-silent">Aug 2024 - Present</p>
+                <p class="text-silent">Aug 2024 - November 2025</p>
             </div>
             <span class="markblue">Co-founder</span> and lead developer of katalislintasglobal.com.
             Developing enterprise-level trading platform with integrated contact management, project
@@ -256,6 +238,42 @@
             Led development of Poernamafest's official <span class="highlightv1">website</span> and
             Poernamafest's <span class="no-break highlightv1">e-commerce platform.</span>
         </div>
+        <br>
+        <div class="about-section">
+            <p class="text-silent">Volunteering</p>
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap gap-2">
+                    <img src="icon/ppid.png" alt="PPI Dunia" class="education-image" />
+                    <div>
+                        <p><b>Deputy Director of Data Center and Digitalization</b></p>
+                        <a class="d-flex align-items-center gap-1 textlink" href="https://ppi.id" target="_blank">PPI
+                            Dunia (Overseas Indonesian Students'​ Association Alliance)<arrow-icon class="togo-icon"
+                                style="margin-top: -1px;"></arrow-icon></a>
+                    </div>
+                </div>
+                <p class="text-silent m0">November 2025 - Present</p>
+            </div>
+            Co-leading the Directorate of Data Center and Digitalization. <span class="marksalmon">Managing three
+                divisions</span> to handle digital systems, data
+            management, and platform integration across PPI Dunia.
+        </div>
+        <div class="about-section">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap gap-2">
+                    <img src="icon/ppim.png" alt="PPI Malaysia" class="education-image" />
+                    <div>
+                        <p><b>Head of Data and Information System Bureau</b></p>
+                        <a class="d-flex align-items-center gap-1 textlink" href="https://ppimalaysia.id"
+                            target="_blank">PPI
+                            Malaysia (Indonesian Students Association)<arrow-icon class="togo-icon"
+                                style="margin-top: -1px;"></arrow-icon></a>
+                    </div>
+                </div>
+                <p class="text-silent m0">Mar 2025 - Dec 2025</p>
+            </div>
+            <span class="marksalmon">Leading a team of 12</span> to develop and manage digital platforms for Indonesian
+            students in Malaysia.
+        </div>
         <div class="about-section">
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="d-flex flex-wrap gap-2">
@@ -267,7 +285,7 @@
                                 class="togo-icon" style="margin-top: -1px;"></arrow-icon></a>
                     </div>
                 </div>
-                <p class="text-silent">Mar 2022 - Dec 2023</p>
+                <p class="text-silent m0">Mar 2022 - Dec 2023</p>
             </div>
             Created and launched <span class="marksalmon">UM Notes</span> (notes.ppiunimalaya.id), a
             platform for University Malaya students to share course materials. Implemented secure siswamail

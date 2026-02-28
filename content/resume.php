@@ -49,9 +49,9 @@
             </div>
             <hr>
             <h4>Profile</h4>
-            <p>AI engineer and Computer Science (Artificial Intelligence) student at Universiti Malaya with hands-on
-                experience in machine learning, deep learning, computer vision, and full-stack development. Passionate
-                about designing end-to-end AI systems and building impactful web applications.</p>
+            <p>Computer Science (Artificial Intelligence) student at Universiti Malaya and Data Intern at TikTok.
+                Experienced in data analytics, business analysis, machine learning, and full-stack development.
+                Passionate about transforming data into actionable insights and building impactful digital solutions.</p>
             <hr>
             <h4>Education</h4>
             <p>
@@ -73,13 +73,23 @@
             <hr>
             <h4>Work Experience</h4>
             <p>
+                <span><b>TikTok (Bytedance)</b></span><br>
+                <span>Data Intern (GBS CST ID)</span><br>
+                <span>Jan 2026 – Present</span>
+            <ul style="margin-top: -12px;">
+                <li>Support revenue growth initiatives through data analytics and business analyst workflows.</li>
+                <li>Build data pipelines and automation frameworks using SQL and Python to track KPIs across markets.</li>
+                <li>Design interactive dashboards for cross-market trend visualization and strategic decision-making.</li>
+            </ul>
+            </p>
+            <p>
                 <span><b>PT. Katalis Lintas Global</b></span><br>
-                <span>Co-Founder & Lead Developer</span><br>
+                <span>Head of IT Department & Co-Founder</span><br>
                 <span>Aug 2024 – Nov 2025</span>
             <ul style="margin-top: -12px;">
-                <li>Developed a content management system for inventory tracking, ROI analysis, and operational
-                    workflows.</li>
-                <li>Built company website and configured private email infrastructure.</li>
+                <li>Co-founder and lead developer of katalislintasglobal.com.</li>
+                <li>Developed an enterprise-level trading platform with integrated contact management, project tracking,
+                    and multi-currency financial systems.</li>
             </ul>
             </p>
             <p>
@@ -87,10 +97,9 @@
                 <span>AI Engineer Intern</span><br>
                 <span>Feb 2025 – Mar 2025</span>
             <ul style="margin-top: -12px;">
-                <li>Built AvatarAI, a real-time conversational system that combines speech recognition, language models,
-                    and text-to-speech with animated avatar visualization for interactive user conversations.</li>
-                <li>Developed a Speech-to-Speech voice chatbot enabling hands-free, voice-only interactions powered by
-                    retrieval-augmented generation.</li>
+                <li>Developed AvatarAI, a real-time AI video conversation system using Qdrant vector database, LLM
+                    response generation, and avatar animation.</li>
+                <li>Created seamless AI-powered video call experiences for user interactions.</li>
             </ul>
             </p>
             <p>
@@ -105,30 +114,29 @@
             <hr>
             <h4>Organizations</h4>
             <p>
-                <span><b>PPI Dunia (OISAA)</b></span><br>
+                <span><b>PPI Dunia (Overseas Indonesian Students' Association Alliance)</b></span><br>
                 <span>Deputy Director of Data Center and Digitalization</span><br>
                 <span>Nov 2025 – Present</span>
             <ul style="margin-top: -12px;">
-                <li>Co-lead three divisions managing digital systems, data infrastructure, and platform integration for
-                    Indonesian student communities worldwide.</li>
+                <li>Co-leading the Directorate of Data Center and Digitalization. Managing three divisions to handle
+                    digital systems, data management, and platform integration across PPI Dunia.</li>
             </ul>
             </p>
             <p>
-                <span><b>PPI Malaysia</b></span><br>
-                <span>Head of Data and Information Systems Bureau</span><br>
+                <span><b>PPI Malaysia (Indonesian Students Association)</b></span><br>
+                <span>Head of Data and Information System Bureau</span><br>
                 <span>Mar 2025 – Dec 2025</span>
             <ul style="margin-top: -12px;">
-                <li>Oversaw IT initiatives and digital transformation for the Indonesian student association in
-                    Malaysia.</li>
+                <li>Led a team of 12 to develop and manage digital platforms for Indonesian students in Malaysia.</li>
             </ul>
             </p>
             <p>
-                <span><b>PPI Universiti Malaya</b></span><br>
-                <span>Intellectual Division Member</span><br>
+                <span><b>PPI University Malaya (Indonesian Students Association)</b></span><br>
+                <span>Intellectual Division</span><br>
                 <span>Mar 2022 – Dec 2023</span>
             <ul style="margin-top: -12px;">
-                <li>Created UM Notes, a file-sharing platform that became the most widely used resource hub among UM
-                    students.</li>
+                <li>Created and launched UM Notes (notes.ppiunimalaya.id), a platform for University Malaya students to
+                    share course materials.</li>
             </ul>
             </p>
             <hr>

@@ -28,11 +28,11 @@
             <span class="markblue">Bachelor’s in Computer Science (Artificial Intelligence)</span>
             at <span class="markgreen">University of Malaya</span>.
             Besides that, I’m a Data Support Intern at
-            <span class="glitch-tiktok" data-text="TikTok">TikTok</span> and active in student organizations — serving
+            <span class="glitch-tiktok" data-text="TikTok">TikTok</span> and active in student organizations, serving
             as the Deputy Head of the Data Center and
             Digitalization Directorate at
             <span class="marksalmon">PPI Dunia</span>, where I co-lead two divisions:
-            Data Analysis & Digital Governance, and Technology Development & Infrastructure —
+            Data Analysis & Digital Governance, and Technology Development & Infrastructure,
             focusing on digital systems, data management, and platform integration across the global Indonesian student
             network.
             Previously, I led the Data and Information System Bureau at
@@ -41,12 +41,17 @@
         </p>
 
         <p class="about-section">
-            I love building digital solutions that connect technology with real-world impact.
-            I build websites using React, Laravel, Native (HTML, CSS, JavaScript, and PHP), develop mobile apps with
-            Android
-            Studio and React
-            Native,
-            and explore AI projects using Python.
+            My recent work focuses on AI-powered fashion recommendation systems. For my Final Year Project this
+            semester,
+            I am developing a fashion recommendation iOS app based on complementary item retrieval and planned biometric
+            personalization. The outfit recommendation model is based on the <span
+                class="highlightv1">OutfitTransformer</span>
+            architecture paper with slight modifications to make it work on CPU-only infrastructure, reducing the
+            dependency on GPU for practical deployment. Other than that, I build full-stack applications using
+            <span class="marksalmon">React, Laravel, and Native web technologies</span>, develop mobile apps with
+            <span class="marksalmon">React Native</span>, and implement AI solutions using
+            <span class="marksalmon">Python</span> with <span class="marksalmon">PyTorch</span> and vector retrieval
+            systems.
         </p>
         <!--
         <p class="about-section">
@@ -59,8 +64,7 @@
         </ul>
 -->
         <p class="about-section">
-            Outside of coding, I enjoy sharing knowledge and explaining tech in simple, relatable
-            ways.
+            Outside of coding, I like to discuss and share knowledge about tech and AI.
             I’m also that rare extroverted developer who loves a good stage and a good challenge!
             Want to chat about tech, collaborate on something cool, or just say hi?
             Let’s build something awesome together!
@@ -175,22 +179,31 @@
             Exchange semester at School of Computing, <span class="markyellow">awarded GKS
                 Scholarship</span>. Completed advanced courses in Deep Learning and Computer Vision.
         </div><br>
-        
+
         <div class="about-section">
             <p class="text-silent">Experience</p>
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="d-flex flex-wrap gap-2">
                     <img src="icon/tiktok-icon.png" alt="tiktok" class="education-image" />
                     <div>
-                        <p><b>Data Support Intern (GBS CST)</b></p>
-                        <a class="d-flex align-items-center gap-1 textlink" href="https://tiktok.com"
-                            target="_blank">TikTok<arrow-icon class="togo-icon" style="margin-top: -1px;"></arrow-icon></a>
+                        <p><b>Data Intern (GBS CST ID)</b></p>
+                        <a class="d-flex align-items-center gap-1 textlink" href="https://lifeattiktok.com"
+                            target="_blank">TikTok (Bytedance)<arrow-icon class="togo-icon" style="margin-top: -1px;">
+                            </arrow-icon></a>
                     </div>
                 </div>
                 <p class="text-silent">Jan 2026 - Present</p>
             </div>
-            Handled data collection, cleaning, and reporting, delivering ad-hoc analysis and dashboards that surfaced
-            KPIs and cross-market insights for stakeholders.
+            Support <span class="markblue">revenue growth initiatives</span> for TikTok's Global Business Solutions team
+            through end-to-end data analytics and business analyst workflows. Create data pipelines and
+            <span class="highlightv1">automation frameworks</span> using SQL and Python to track KPIs across multiple
+            markets.
+            <br><br>
+            Design <span class="highlightv1">interactive dashboards</span> that visualize complex cross-market trends,
+            enabling stakeholders to identify growth opportunities and optimize business strategies.
+            <br><br>
+            Conduct ad-hoc statistical analyses to answer critical business questions, translating raw data into
+            <span class="markblue">actionable insights</span> that inform strategic decision-making.
         </div>
         <div class="about-section">
             <div class="d-flex flex-wrap justify-content-between">

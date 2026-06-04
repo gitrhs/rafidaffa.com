@@ -25,7 +25,7 @@
                 -->
                 <div class="" style="margin-left: 10px">
                     <a type="button"
-                        href="https://drive.google.com/file/d/1wAZH9OJYt-_kLb9gGWxkqpILXNZ0d1ur/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1wU5UoIR34651N1PQMrKfmiAfym034UVz/view?usp=sharing"
                         target="_blank" class="btn btn-main btn-max d-flex align-items-center button-border m0">
                         <span class="menu-icon">
                             <download-icon class="menu-icon-data icon20"></download-icon>
@@ -51,7 +51,8 @@
             <h4>Profile</h4>
             <p>Computer Science (Artificial Intelligence) student at Universiti Malaya and Data Intern at TikTok.
                 Experienced in data analytics, business analysis, machine learning, and full-stack development.
-                Passionate about transforming data into actionable insights and building impactful digital solutions.</p>
+                Passionate about transforming data into actionable insights and building impactful digital solutions.
+            </p>
             <hr>
             <h4>Education</h4>
             <p>
@@ -78,8 +79,10 @@
                 <span>Jan 2026 – Present</span>
             <ul style="margin-top: -12px;">
                 <li>Support revenue growth initiatives through data analytics and business analyst workflows.</li>
-                <li>Build data pipelines and automation frameworks using SQL and Python to track KPIs across markets.</li>
-                <li>Design interactive dashboards for cross-market trend visualization and strategic decision-making.</li>
+                <li>Build data pipelines and automation frameworks using SQL and Python to track KPIs across markets.
+                </li>
+                <li>Design interactive dashboards for cross-market trend visualization and strategic decision-making.
+                </li>
             </ul>
             </p>
             <p>
